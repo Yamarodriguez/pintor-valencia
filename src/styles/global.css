@@ -1672,3 +1672,35 @@ a:hover { color: var(--azul-osc); }
   background: var(--azul);
   color: #fff;
 }
+
+/* ═══ PASE 2 — ritmo compacto y unificación de imágenes ═══ */
+
+/* Compactar el enorme espaciado vertical (la home tiene 21 secciones). */
+.seccion { padding-block: clamp(2rem, 4.2vw, 3.4rem); }
+.contenedor.portada { padding-block: var(--e-4) var(--e-3); }
+.hero__imagen { max-height: 66vh; }
+
+/* Imágenes de contenido con ancho uniforme y enmarcado consistente.
+   Sin recorte: se respeta la proporción original para no cortar las
+   imágenes que llevan texto (collage "LO QUE TU NECESITA", "DISEÑO 3D"). */
+.seccion .contenedor > figure img {
+  width: min(100%, 540px);
+  max-width: min(100%, 540px);
+}
+
+/* Las imágenes de la sección de servicios (etiqueta h3 + imagen) son
+   más pequeñas, como tiles de catálogo. */
+.seccion .contenedor > .prosa:has(> h3:only-child) + figure img {
+  width: min(100%, 280px);
+  max-width: min(100%, 280px);
+}
+.seccion .contenedor > .prosa:has(> h3:only-child) {
+  margin-top: var(--e-3);
+}
+
+/* Un poco de jerarquía en las entradillas que siguen a un h2. */
+.seccion h2 + p {
+  font-size: var(--t-lg);
+  color: var(--marino-alto);
+  line-height: 1.5;
+}
