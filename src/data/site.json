@@ -75,6 +75,34 @@
         {
           "texto": "Pintores Económicos",
           "url": "/economicos/"
+        },
+        {
+          "texto": "Gotelé",
+          "url": "/gotele/"
+        },
+        {
+          "texto": "Alisado de paredes",
+          "url": "/alisado-de-paredes/"
+        },
+        {
+          "texto": "Pladur",
+          "url": "/pladur/"
+        },
+        {
+          "texto": "Escayolista",
+          "url": "/escayolista/"
+        },
+        {
+          "texto": "Lacados",
+          "url": "/lacados/"
+        },
+        {
+          "texto": "Impermeabilizaciones",
+          "url": "/impermeabilizaciones/"
+        },
+        {
+          "texto": "Diseño 3D",
+          "url": "/diseno-3d/"
         }
       ]
     },
