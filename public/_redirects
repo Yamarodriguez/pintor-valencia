@@ -1,0 +1,21 @@
+# Redirecciones para Netlify. Se cargan solas al desplegar.
+
+# --- Sitemaps de Yoast ---
+# Google los tiene registrados. Al migrar dejan de existir, así que se
+# redirigen al sitemap nuevo en lugar de dar 404.
+/sitemap_index.xml      /sitemap.xml   301
+/page-sitemap.xml       /sitemap.xml   301
+/post-sitemap.xml       /sitemap.xml   301
+/category-sitemap.xml   /sitemap.xml   301
+/author-sitemap.xml     /sitemap.xml   301
+
+# --- Restos de WordPress ---
+# 410 en vez de 404: le dice a Google que han desaparecido para siempre.
+/wp-admin/*      410
+/wp-login.php    410
+/xmlrpc.php      410
+/wp-json/*       410
+/feed/           410
+/comments/feed/  410
+/category/*      410
+/author/*        410

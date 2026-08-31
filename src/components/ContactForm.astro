@@ -1,0 +1,78 @@
+---
+import site from '../data/site.json';
+const f = site.formulario;
+---
+<form class="formulario" action={f.endpoint} method="POST">
+  <input type="hidden" name="access_key" value={f.accessKey} />
+  <input type="hidden" name="subject" value={f.asunto} />
+  <input type="hidden" name="from_name" value={site.nombre} />
+  <input type="hidden" name="redirect" value={f.redireccion} />
+
+  <!-- Trampa antispam: si un bot la marca, Web3Forms descarta el envío -->
+  <input type="checkbox" name="botcheck" class="trampa" tabindex="-1"
+         autocomplete="off" aria-hidden="true" />
+
+  <div class="campo campo--par">
+    <div>
+      <label for="nombre">Nombre</label>
+      <input id="nombre" type="text" name="name" required autocomplete="name" />
+    </div>
+    <div>
+      <label for="telefono">Teléfono <span class="campo__opcional">opcional</span></label>
+      <input id="telefono" type="tel" name="telefono" autocomplete="tel" />
+    </div>
+  </div>
+
+  <div class="campo campo--par">
+    <div>
+      <label for="email">Email</label>
+      <input id="email" type="email" name="email" required autocomplete="email" />
+    </div>
+    <div>
+      <label for="localidad">Localidad</label>
+      <input id="localidad" type="text" name="localidad"
+             placeholder="Valencia, Torrent, Gandía…" autocomplete="address-level2" />
+    </div>
+  </div>
+
+  <div class="campo campo--par">
+    <div>
+      <label for="trabajo">¿Qué necesitas pintar?</label>
+      <select id="trabajo" name="trabajo" required>
+        <option value="">Selecciona…</option>
+        <option>Vivienda o piso</option>
+        <option>Local o negocio</option>
+        <option>Fachada o edificio</option>
+        <option>Nave industrial</option>
+        <option>Piscina</option>
+        <option>Muebles o puertas</option>
+        <option>Mural decorativo</option>
+        <option>Otro trabajo</option>
+      </select>
+    </div>
+    <div>
+      <label for="metros">Metros cuadrados <span class="campo__opcional">opcional</span></label>
+      <input id="metros" type="text" name="metros" placeholder="90 m²" />
+    </div>
+  </div>
+
+  <div class="campo">
+    <label for="mensaje">Cuéntanos el trabajo</label>
+    <textarea id="mensaje" name="message" required
+      placeholder="Qué hay que pintar, en qué estado están las paredes y para cuándo lo necesitas."></textarea>
+  </div>
+
+  <div class="campo campo--consentimiento">
+    <input id="consiento" type="checkbox" name="consentimiento" value="si" required />
+    <label for="consiento">
+      He leído y acepto la <a href="/politica-de-privacidad/">política de privacidad</a>.
+    </label>
+  </div>
+
+  <button class="boton" type="submit">Pedir presupuesto gratis</button>
+
+  <p class="formulario__aviso">
+    Solo usamos tus datos para responderte. No los cedemos a terceros
+    ni te apuntamos a ninguna lista.
+  </p>
+</form>

@@ -1,0 +1,593 @@
+{
+  "_nota": "Imagen principal (hero) de cada pagina. Se toma del cuerpo original de WordPress. Las rutas bajo /wp-content/uploads/ estan indexadas en Google Imagenes: NO se renombran nunca. Las marcadas PENDIENTE no tenian foto propia en WordPress: al anadirla, poner aqui la ruta y el alt.",
+  "/albaida/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Albaida.jpg",
+    "alt": "Pintores Albaida, Tu Pintor",
+    "estado": "OK"
+  },
+  "/albal/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Albal.jpg",
+    "alt": "Pintores Albal, Tu Pintor",
+    "estado": "OK"
+  },
+  "/alberic/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Alberic.jpg",
+    "alt": "Pintores Alberic, Tu Pintor",
+    "estado": "OK"
+  },
+  "/alboraya/": {
+    "imagen": null,
+    "alt": "PINTOR Alboraya: Tus Pintores",
+    "estado": "PENDIENTE - sin foto propia en WordPress"
+  },
+  "/alcasser/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Alcasser.jpg",
+    "alt": "Pintores Alcasser, Tu Pintor",
+    "estado": "OK"
+  },
+  "/alcudia/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Alcudia.jpg",
+    "alt": "Pintores Alcudia, Tu Pintor",
+    "estado": "OK"
+  },
+  "/alfafar/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Alfafar.jpg",
+    "alt": "Pintores Alfafar, Tu Pintor",
+    "estado": "OK"
+  },
+  "/algemesi/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Algemesi.jpg",
+    "alt": "Pintores en Algemesí, Tu Pintor",
+    "estado": "OK"
+  },
+  "/alginet/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Alginet.jpg",
+    "alt": "Pintores Alginet, Tu Pintor",
+    "estado": "OK"
+  },
+  "/almassera/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Almassera.jpg",
+    "alt": "Pintores Almassera, Tu Pintor",
+    "estado": "OK"
+  },
+  "/almussafes/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Almussafes.jpg",
+    "alt": "Pintores Almussafes, Tu Pintor",
+    "estado": "OK"
+  },
+  "/alzira/": {
+    "imagen": null,
+    "alt": "Pintores Alzira: Tu Pintor",
+    "estado": "PENDIENTE - sin foto propia en WordPress"
+  },
+  "/arrancapins/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Arrancapins.jpg",
+    "alt": "Pintores Arrancapins, Tu Pintor",
+    "estado": "OK"
+  },
+  "/aviso-legal/": {
+    "imagen": null,
+    "alt": "Aviso Legal",
+    "estado": "PENDIENTE - sin foto propia en WordPress"
+  },
+  "/ayora/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Ayora.jpg",
+    "alt": "Pintores Ayora, Tu Pintor",
+    "estado": "OK"
+  },
+  "/baratos/": {
+    "imagen": null,
+    "alt": "PINTORES BARATOS: Tus Pintor barato Valencia",
+    "estado": "PENDIENTE - sin foto propia en WordPress"
+  },
+  "/benaguasil/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Benaguasil.jpg",
+    "alt": "Pintores Benaguasil, Tu Pintor",
+    "estado": "OK"
+  },
+  "/benetusser/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Benetusser.jpg",
+    "alt": "Pintores Benetússer, Tu Pintor",
+    "estado": "OK"
+  },
+  "/benicalap/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Benicalap.jpg",
+    "alt": "Pintores Benicalap, Tu Pintor",
+    "estado": "OK"
+  },
+  "/benifaio/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Benifaio.jpg",
+    "alt": "Pintores Benifaió, Tu Pintor",
+    "estado": "OK"
+  },
+  "/benimaclet/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Benimaclet.jpg",
+    "alt": "Pintores Benimaclet, Tu Pintor",
+    "estado": "OK"
+  },
+  "/benimamet/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Benimamet.jpg",
+    "alt": "Pintores Benimamet, Tu Pintor",
+    "estado": "OK"
+  },
+  "/betera/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Betera.jpg",
+    "alt": "Pintores en Bétera, Tu Pintor",
+    "estado": "OK"
+  },
+  "/blasco-ibanez/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Blasco-Ibanez.jpg",
+    "alt": "Pintores Blasco Ibáñez, Tu Pintor",
+    "estado": "OK"
+  },
+  "/bunol/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Bunol.jpg",
+    "alt": "Pintores Buñol, Tu Pintor",
+    "estado": "OK"
+  },
+  "/burjassot/": {
+    "imagen": null,
+    "alt": "Pintores en Burjassot: Tu Pintor",
+    "estado": "PENDIENTE - sin foto propia en WordPress"
+  },
+  "/cabanal/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Cabanal.jpg",
+    "alt": "Pintores Cabañal, Tu Pintor",
+    "estado": "OK"
+  },
+  "/campanar/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Campanar.jpg",
+    "alt": "Pintores Campanar, Tu Pintor",
+    "estado": "OK"
+  },
+  "/canals/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Canals.jpg",
+    "alt": "Pintores Canals, Tu Pintor",
+    "estado": "OK"
+  },
+  "/canet-de-berenguer/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-canet-de-berenguer.jpg",
+    "alt": "Pintores Canet de Berenguer, Tu Pintor",
+    "estado": "OK"
+  },
+  "/carcaixent/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Carcaixent.jpg",
+    "alt": "Pintores Carcaixent, Tu Pintor",
+    "estado": "OK"
+  },
+  "/carlet/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Carlet.jpg",
+    "alt": "Pintores Carlet, Tu Pintor",
+    "estado": "OK"
+  },
+  "/casa/": {
+    "imagen": null,
+    "alt": "Pintor de casa: cómo elegir al mejor profesional para tu vivienda",
+    "estado": "PENDIENTE - sin foto propia en WordPress"
+  },
+  "/cheste/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Cheste.jpg",
+    "alt": "Pintores Cheste, Tu Pintor",
+    "estado": "OK"
+  },
+  "/chiva/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Chiva.jpg",
+    "alt": "Pintores Chiva, Tu Pintor",
+    "estado": "OK"
+  },
+  "/contacto/": {
+    "imagen": null,
+    "alt": "Pintor contacto",
+    "estado": "PENDIENTE - sin foto propia en WordPress"
+  },
+  "/cullera/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Cullera.jpg",
+    "alt": "Pintores Cullera, Tu Pintor",
+    "estado": "OK"
+  },
+  "/economicos/": {
+    "imagen": null,
+    "alt": "PINTORES ECONOMICOS: Tus Pintor Económico",
+    "estado": "PENDIENTE - sin foto propia en WordPress"
+  },
+  "/el-carmen/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-EN-el-Carmen.jpg",
+    "alt": "Pintores el Carmen, Tu Pintor",
+    "estado": "OK"
+  },
+  "/eliana/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Eliana.jpg",
+    "alt": "Pintores en la Eliana, Tu Pintor",
+    "estado": "OK"
+  },
+  "/empresa/": {
+    "imagen": "/wp-content/uploads/2023/11/empresa-pintores.jpg",
+    "alt": "EMPRESA DE PINTORES VALENCIA",
+    "estado": "OK"
+  },
+  "/foios/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Foios.jpg",
+    "alt": "Pintores Foios, Tu Pintor",
+    "estado": "OK"
+  },
+  "/gandia/": {
+    "imagen": null,
+    "alt": "PINTOR GANDIA: Tus Pintores",
+    "estado": "PENDIENTE - sin foto propia en WordPress"
+  },
+  "/godella/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Godella.jpg",
+    "alt": "Pintores Godella, Tu Pintor",
+    "estado": "OK"
+  },
+  "/guadassuar/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Guadassuar.jpg",
+    "alt": "Pintores Guadassuar, Tu Pintor",
+    "estado": "OK"
+  },
+  "/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-en-valencia.jpg",
+    "alt": "PINTOR VALENCIA",
+    "estado": "OK"
+  },
+  "/la-creu-del-grau/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-la-creu-del-grau.jpg",
+    "alt": "Pintores La Creu del Grau, Tu Pintor",
+    "estado": "OK"
+  },
+  "/la-raiosa/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-La-Raiosa.jpg",
+    "alt": "Pintores La Raiosa, Tu Pintor",
+    "estado": "OK"
+  },
+  "/lhort-de-senabre/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-lhort-de-senabre.jpg",
+    "alt": "Pintores L’Hort de Senabre, Tu Pintor",
+    "estado": "OK"
+  },
+  "/malilla/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Malilla.jpg",
+    "alt": "Pintores Malilla, Tu Pintor",
+    "estado": "OK"
+  },
+  "/malvarrosa/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Malvarrosa.jpg",
+    "alt": "Pintores Malvarrosa, Tu Pintor",
+    "estado": "OK"
+  },
+  "/massamagrell/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Massamagrell.jpg",
+    "alt": "Pintores Massamagrell, Tu Pintor",
+    "estado": "OK"
+  },
+  "/massanassa/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Massanassa.jpg",
+    "alt": "Pintores Massanassa, Tu Pintor",
+    "estado": "OK"
+  },
+  "/meliana/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Meliana.jpg",
+    "alt": "Pintores Picanya, Tu Pintor",
+    "estado": "OK"
+  },
+  "/mestalla/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Mestalla.jpg",
+    "alt": "Pintores Mestalla, Tu Pintor",
+    "estado": "OK"
+  },
+  "/mislata/": {
+    "imagen": null,
+    "alt": "Pintores Mislata: Tu Pintor",
+    "estado": "PENDIENTE - sin foto propia en WordPress"
+  },
+  "/moncada/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Moncada.jpg",
+    "alt": "Pintores Moncada, Tu Pintor",
+    "estado": "OK"
+  },
+  "/monteolivete/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Monteolivete.jpg",
+    "alt": "Pintores Monteolivete, Tu Pintor",
+    "estado": "OK"
+  },
+  "/montserrat/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Montserrat.jpg",
+    "alt": "Pintores Montserrat, Tu Pintor",
+    "estado": "OK"
+  },
+  "/museros/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Museros.jpg",
+    "alt": "Pintores Museros, Tu Pintor",
+    "estado": "OK"
+  },
+  "/naquera/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Naquera.jpg",
+    "alt": "Pintores Naquera, Tu Pintor",
+    "estado": "OK"
+  },
+  "/nou-moles/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-nou-moles.jpg",
+    "alt": "Pintores Nou Moles, Tu Pintor",
+    "estado": "OK"
+  },
+  "/olleria/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Olleria.jpg",
+    "alt": "Pintores Ollería, Tu Pintor",
+    "estado": "OK"
+  },
+  "/ontinyent/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Ontinyent.jpg",
+    "alt": "Pintores Ontinyent: Tu Pintor",
+    "estado": "OK"
+  },
+  "/orriols/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Orriols.jpg",
+    "alt": "Pintores Orriols, Tu Pintor",
+    "estado": "OK"
+  },
+  "/paiporta/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Paiporta.jpg",
+    "alt": "Pintores en Paiporta, Tu Pintor",
+    "estado": "OK"
+  },
+  "/paterna/": {
+    "imagen": null,
+    "alt": "Pintores Paterna: Tu Pintor",
+    "estado": "PENDIENTE - sin foto propia en WordPress"
+  },
+  "/patraix/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Patraix-.jpg",
+    "alt": "Pintores Patraix, Tu Pintor",
+    "estado": "OK"
+  },
+  "/personalizar-cookies/": {
+    "imagen": null,
+    "alt": "Personalizar Cookies",
+    "estado": "PENDIENTE - sin foto propia en WordPress"
+  },
+  "/picanya/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Picanya.jpg",
+    "alt": "Pintores Picanya, Tu Pintor",
+    "estado": "OK"
+  },
+  "/picassent/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Picassent.jpg",
+    "alt": "Pintores Picassent, Tu Pintor",
+    "estado": "OK"
+  },
+  "/pintor-de-brocha-gorda/": {
+    "imagen": null,
+    "alt": "Pintor de brocha gorda: cómo elegir al mejor profesional para tu vivienda",
+    "estado": "PENDIENTE - sin foto propia en WordPress"
+  },
+  "/pintor-de-paredes-y-techos/": {
+    "imagen": null,
+    "alt": "Pintor de pared y techos: cómo elegir al mejor profesional para tus paredes y techos",
+    "estado": "PENDIENTE - sin foto propia en WordPress"
+  },
+  "/pintor-muebles/": {
+    "imagen": null,
+    "alt": "Pintor de Muebles: cómo elegir al mejor profesional para tus muebles",
+    "estado": "PENDIENTE - sin foto propia en WordPress"
+  },
+  "/pintor-mural/": {
+    "imagen": null,
+    "alt": "Pintor de mural: cómo elegir al mejor profesional para tus murales",
+    "estado": "PENDIENTE - sin foto propia en WordPress"
+  },
+  "/pintor-oliva/": {
+    "imagen": "/wp-content/uploads/2024/01/pintor-Oliva.jpg",
+    "alt": "Pintor Oliva, Tus Pintores",
+    "estado": "OK"
+  },
+  "/pintor-piscinas/": {
+    "imagen": null,
+    "alt": "Pintor de piscinas: cómo elegir al mejor profesional para tu piscina",
+    "estado": "PENDIENTE - sin foto propia en WordPress"
+  },
+  "/pintor-piso/": {
+    "imagen": null,
+    "alt": "Pintor de piso: cómo elegir al mejor profesional para tu piso",
+    "estado": "PENDIENTE - sin foto propia en WordPress"
+  },
+  "/pintores-alaquas/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Alaquas.jpg",
+    "alt": "Pintores Alaquàs, Tu Pintor",
+    "estado": "OK"
+  },
+  "/pintores-aldaia/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Aldaia.jpg",
+    "alt": "Pintores Aldaia: Tu Pintor",
+    "estado": "OK"
+  },
+  "/pintores-de-fachadas/": {
+    "imagen": null,
+    "alt": "Pintor Fachada: cómo elegir al mejor profesional para tu Fachada",
+    "estado": "PENDIENTE - sin foto propia en WordPress"
+  },
+  "/pintores-de-interiores/": {
+    "imagen": null,
+    "alt": "Pintor de interiores: cómo elegir al mejor profesional para tu interior",
+    "estado": "PENDIENTE - sin foto propia en WordPress"
+  },
+  "/pintores-en-catarroja/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-en-Catarroja.jpg",
+    "alt": "Pintores en Catarroja, Tu Pintor",
+    "estado": "OK"
+  },
+  "/pintores-en-lliria/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Lliria.jpg",
+    "alt": "Pintores Llíria, Tu Pintor",
+    "estado": "OK"
+  },
+  "/pintores-industriales/": {
+    "imagen": null,
+    "alt": "Pintores industriales: cómo elegir al mejor profesional tu industria",
+    "estado": "PENDIENTE - sin foto propia en WordPress"
+  },
+  "/pintores-manises/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Manises.jpg",
+    "alt": "Pintores Manises, Tu Pintor",
+    "estado": "OK"
+  },
+  "/pintores-quart-de-poblet/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Quart-de-Poblet.jpg",
+    "alt": "Pintores Quart de Poblet, Tu Pintor",
+    "estado": "OK"
+  },
+  "/pintores-xativa/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Xativa.jpg",
+    "alt": "Pintores Xàtiva, Tu Pintor",
+    "estado": "OK"
+  },
+  "/pobla-de-farnals/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Pobla-de-Farnals.jpg",
+    "alt": "Pintores Pobla de Farnals, Tu Pintor",
+    "estado": "OK"
+  },
+  "/pobla-de-vallbona/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Pobla-de-Vallbona.jpg",
+    "alt": "Pintores Pobla de Vallbona, Tu Pintor",
+    "estado": "OK"
+  },
+  "/politica-de-cookies/": {
+    "imagen": null,
+    "alt": "Política de Cookies",
+    "estado": "PENDIENTE - sin foto propia en WordPress"
+  },
+  "/politica-de-privacidad/": {
+    "imagen": null,
+    "alt": "Política de Privacidad",
+    "estado": "PENDIENTE - sin foto propia en WordPress"
+  },
+  "/precio/": {
+    "imagen": null,
+    "alt": "Precio pintor",
+    "estado": "PENDIENTE - sin foto propia en WordPress"
+  },
+  "/presupuesto/": {
+    "imagen": null,
+    "alt": "Pintor Presupuesto",
+    "estado": "PENDIENTE - sin foto propia en WordPress"
+  },
+  "/puig/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Puig.jpg",
+    "alt": "Pintores Puig, Tu Pintor",
+    "estado": "OK"
+  },
+  "/puzol/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Puzol.jpg",
+    "alt": "Pintores Puzol, Tu Pintor",
+    "estado": "OK"
+  },
+  "/rafelbunol-rafelbunyol/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Rafelbunol-Rafelbunyol.jpg",
+    "alt": "Pintores Rafelbuñol-Rafelbunyol, Tu Pintor",
+    "estado": "OK"
+  },
+  "/requena/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Requena.jpg",
+    "alt": "Pintores Requena, Tu Pintor",
+    "estado": "OK"
+  },
+  "/ribarroja-del-turia/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Ribarroja-del-Turia.jpg",
+    "alt": "Pintores Ribarroja del Turia, Tu Pintor",
+    "estado": "OK"
+  },
+  "/rocafort/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Rocafort.jpg",
+    "alt": "Pintores Rocafort, Tu Pintor",
+    "estado": "OK"
+  },
+  "/ruzafa/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Ruzafa.jpg",
+    "alt": "Pintores Ruzafa, Tu Pintor",
+    "estado": "OK"
+  },
+  "/sagunto/": {
+    "imagen": null,
+    "alt": "Pintores Sagunto: Tu Pintor",
+    "estado": "PENDIENTE - sin foto propia en WordPress"
+  },
+  "/san-antonio-benageber/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-San-Antonio-Benageber.jpg",
+    "alt": "Pintores San Antonio Benagéber, Tu Pintor",
+    "estado": "OK"
+  },
+  "/sant-pau/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-sant-pau.jpg",
+    "alt": "Pintores Sant Pau, Tu Pintor",
+    "estado": "OK"
+  },
+  "/sedavi/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Sedavi.jpg",
+    "alt": "Pintores Sedaví, Tu Pintor",
+    "estado": "OK"
+  },
+  "/servicios-pintura/": {
+    "imagen": null,
+    "alt": "SERVICIOS DE PINTURA: Tus Pintores",
+    "estado": "PENDIENTE - sin foto propia en WordPress"
+  },
+  "/silla/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Silla.jpg",
+    "alt": "Pintores Silla, Tu Pintor",
+    "estado": "OK"
+  },
+  "/sueca/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Sueca.jpg",
+    "alt": "Pintores en Sueca, Tu Pintor",
+    "estado": "OK"
+  },
+  "/tavernes-blanques/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Tavernes-Blanques.jpg",
+    "alt": "Pintores Tavernes Blanques, Tu Pintor",
+    "estado": "OK"
+  },
+  "/tavernes-de-valldigna/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Tavernes-de-Valldigna.jpg",
+    "alt": "Pintores Tavernes de Valldigna, Tu Pintor",
+    "estado": "OK"
+  },
+  "/tienda-pinturas/": {
+    "imagen": null,
+    "alt": "PINTOR VALENCIA: Tus Pintores Valencianos",
+    "estado": "PENDIENTE - sin foto propia en WordPress"
+  },
+  "/torrefiel/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Torrefiel.jpg",
+    "alt": "Pintores Torrefiel, Tu Pintor",
+    "estado": "OK"
+  },
+  "/torrent/": {
+    "imagen": null,
+    "alt": "PINTOR TORRENT: Tus Pintores en Torrente",
+    "estado": "PENDIENTE - sin foto propia en WordPress"
+  },
+  "/turis/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Turis.jpg",
+    "alt": "Pintores Turís, Tu Pintor",
+    "estado": "OK"
+  },
+  "/utiel/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Utiel.jpg",
+    "alt": "Pintores Utiel, Tu Pintor",
+    "estado": "OK"
+  },
+  "/vilamarxant/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Vilamarxant.jpg",
+    "alt": "Pintores Vilamarxant, Tu Pintor",
+    "estado": "OK"
+  },
+  "/villanueva-de-castellon/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-villanueva-de-castellon.jpg",
+    "alt": "Pintores Villanueva de Castellón, Tu Pintor",
+    "estado": "OK"
+  },
+  "/xirivella/": {
+    "imagen": "/wp-content/uploads/2024/01/pintores-Xirivella.jpg",
+    "alt": "Pintores Xirivella / Chirivella, Tu Pintor",
+    "estado": "OK"
+  }
+}

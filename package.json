@@ -1,0 +1,17 @@
+{
+  "name": "pintor-valencia",
+  "version": "1.0.0",
+  "description": "pintor-valencia.com — migración de WordPress + Elementor a Astro estático",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@fontsource-variable/manrope": "^5.3.0",
+    "@fontsource-variable/space-grotesk": "^5.3.0",
+    "astro": "^7.2.4"
+  },
+  "type": "module"
+}

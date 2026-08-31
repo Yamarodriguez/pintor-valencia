@@ -1,0 +1,204 @@
+---
+import site from '../data/site.json';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Migas from '../components/Migas.astro';
+import heroes from '../data/heroes.json';
+import '@fontsource-variable/space-grotesk';
+import '@fontsource-variable/manrope';
+import '../styles/global.css';
+
+const { pagina, baseImagenes = '' } = Astro.props;
+
+/* La imagen principal sale, por este orden: de la que traiga la propia
+   página, o del mapa heroes.json. Si el archivo declarado no existe
+   todavía, se sirve el marcador .svg del mismo nombre. */
+const declarado = heroes[pagina.url];
+import { resolverImagen, existe } from '../utils/imagenes.js';
+const rutaHero = resolverImagen(pagina.hero ?? declarado?.imagen ?? null);
+
+/* Variante estrecha para móviles: se sirve si existe un archivo
+   hermano terminado en -896 con el mismo nombre. */
+const heroEstrecho = rutaHero && rutaHero.endsWith('.webp')
+  && existe(rutaHero.replace('.webp', '-896.webp'))
+  ? rutaHero.replace('.webp', '-896.webp')
+  : null;
+const heroAlt = declarado?.alt ?? pagina.h1 ?? pagina.titulo;
+const hero = rutaHero ? baseImagenes + rutaHero : null;
+
+const canonical = site.dominio + pagina.url;
+const imagenSocial = (pagina.imagenPrincipal ?? rutaHero)
+  ? site.dominio + (pagina.imagenPrincipal ?? rutaHero)
+  : null;
+
+/* Yoast guarda plantillas con %%variables%%. Se resuelven aquí para no
+   arrastrar la sintaxis del plugin al HTML final. */
+function resolverTitulo(plantilla, titulo) {
+  if (!plantilla) return titulo;
+  return plantilla
+    .replaceAll('%%title%%', titulo)
+    .replaceAll('%%sitename%%', site.nombre)
+    .replaceAll('%%sep%%', '-')
+    .replaceAll('%%page%%', '')
+    .replaceAll('%%primary_category%%', '')
+    .replace(/\s{2,}/g, ' ')
+    .replace(/^[\s-]+|[\s-]+$/g, '')
+    .trim();
+}
+const titulo = resolverTitulo(pagina.metaTitulo, pagina.titulo);
+
+/* --- JSON-LD (regla 3) --- */
+const organizacion = {
+  '@type': 'Organization',
+  '@id': site.dominio + '/#organizacion',
+  name: site.nombre,
+  url: site.dominio,
+  ...(site.email && !site.email.startsWith('PENDIENTE') ? { email: site.email } : {}),
+  logo: { '@type': 'ImageObject', url: site.dominio + site.logo },
+  ...(site.contacto?.telefono && !site.contacto.telefono.startsWith('PENDIENTE')
+    ? { telephone: site.contacto.telefono } : {}),
+  areaServed: 'Valencia, España',
+};
+
+/* Todas las URLs de esta web cuelgan de la raíz. El padre de una página
+   se deduce del menú: /casa/ es hija de /servicios-pintura/. */
+const PADRE = Object.fromEntries(
+  site.navegacion.flatMap((e) =>
+    e.url && e.hijos ? e.hijos.map((h) => [h.url, { name: e.texto, item: site.dominio + e.url }]) : []
+  )
+);
+const recorrido = [{ name: 'Portada', item: site.dominio + '/' }];
+if (PADRE[pagina.url]) recorrido.push(PADRE[pagina.url]);
+if (pagina.url !== '/') {
+  recorrido.push({ name: pagina.h1 || pagina.titulo, item: canonical });
+}
+const migas = {
+  '@type': 'BreadcrumbList',
+  itemListElement: recorrido.map((r, i) => ({
+    '@type': 'ListItem', position: i + 1, name: r.name, item: r.item,
+  })),
+};
+
+const paginaWeb = {
+  '@type': 'WebPage',
+  '@id': canonical + '#pagina',
+  url: canonical,
+  name: titulo,
+  description: pagina.metaDescripcion,
+  inLanguage: 'es',
+  isPartOf: { '@id': site.dominio + '/#organizacion' },
+};
+
+const bloques = [organizacion, migas, paginaWeb];
+
+if (pagina.faq && pagina.faq.length > 0) {
+  bloques.push({
+    '@type': 'FAQPage',
+    '@id': canonical + '#faq',
+    mainEntity: pagina.faq.map((f) => ({
+      '@type': 'Question',
+      name: f.pregunta,
+      acceptedAnswer: { '@type': 'Answer', text: f.respuesta },
+    })),
+  });
+}
+
+const jsonLd = { '@context': 'https://schema.org', '@graph': bloques };
+
+/* Google Analytics: vacío mientras no haya ID. Los dos <script> llevan
+   is:inline a propósito — sin él Astro los empaqueta como módulos y
+   gtag deja de existir en el ámbito global. */
+const ga = site.analytics?.google || '';
+const verif = site.verificaciones ?? {};
+const puesta = (v) => v && !v.startsWith('PENDIENTE');
+---
+<!doctype html>
+<html lang={site.idioma}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>{titulo}</title>
+    <meta name="description" content={pagina.metaDescripcion} />
+    <link rel="canonical" href={canonical} />
+    <meta name="robots" content={pagina.noindex
+      ? "noindex, follow"
+      : "index, follow, max-image-preview:large"} />
+
+    <!-- Favicon: el nombre lleva la keyword del sitio -->
+    <link rel="icon" href="/pintor-valencia-favicon.ico" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/pintor-valencia-favicon-96x96.png" sizes="96x96" />
+    <link rel="apple-touch-icon" href="/pintor-valencia-apple-touch-icon.png" sizes="180x180" />
+    <meta name="theme-color" content="#1f4e79" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content={site.nombre} />
+    <meta property="og:title" content={titulo} />
+    <meta property="og:description" content={pagina.metaDescripcion} />
+    <meta property="og:url" content={canonical} />
+    {imagenSocial && <meta property="og:image" content={imagenSocial} />}
+    <meta name="twitter:card" content="summary_large_image" />
+
+    {puesta(verif.google) && (
+      <meta name="google-site-verification" content={verif.google} />
+    )}
+    {puesta(verif.bing) && <meta name="msvalidate.01" content={verif.bing} />}
+
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+    {ga && (
+      <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${ga}`}></script>
+    )}
+    {ga && (
+      <script is:inline define:vars={{ ga }}>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', ga);
+      </script>
+    )}
+  </head>
+
+  <body>
+    <a class="saltar" href="#contenido">Ir al contenido</a>
+
+    <Header rutaActual={pagina.url} />
+
+    <Migas url={pagina.url} titulo={pagina.h1 || pagina.titulo} />
+
+    <main id="contenido">
+      {hero && (
+        <div class="hero">
+          <img
+            class="hero__imagen"
+            src={hero}
+            srcset={heroEstrecho
+              ? `${baseImagenes + heroEstrecho} 896w, ${hero} 1792w`
+              : undefined}
+            sizes="100vw"
+            alt={heroAlt}
+            width="1792"
+            height="1024"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </div>
+      )}
+
+      <div class="contenedor portada">
+        <h1>{pagina.h1 || pagina.titulo}</h1>
+        {pagina.entradilla && (
+          <p class="portada__entradilla" set:html={pagina.entradilla} />
+        )}
+        {pagina.cta && (
+          <p><a class="pildora" href={pagina.cta.url}>{pagina.cta.texto}</a></p>
+        )}
+      </div>
+
+      <slot />
+    </main>
+
+    <Footer />
+  </body>
+</html>

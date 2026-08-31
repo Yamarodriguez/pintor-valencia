@@ -1,0 +1,8 @@
+Copia aqui el contenido de /wp-content/uploads/ del WordPress de
+pintor-valencia.com, manteniendo la estructura de carpetas por anio y mes.
+
+Deben quedar rutas como:
+  public/wp-content/uploads/2023/11/Pintor.jpg
+  public/wp-content/uploads/2023/12/pintor-de-interior.jpg
+
+Estas rutas estan indexadas en Google Imagenes: NO se renombran nunca.

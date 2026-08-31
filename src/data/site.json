@@ -1,0 +1,508 @@
+{
+  "nombre": "Pintor Valencia",
+  "dominio": "https://pintor-valencia.com",
+  "idioma": "es",
+  "email": "PENDIENTE-EMAIL-DE-CONTACTO",
+  "logo": "/wp-content/uploads/2024/01/pintores-en-valencia.jpg",
+  "logoAlt": "Pintor Valencia",
+  "_comentario_baseImagenes": "Dejar SIEMPRE en cadena vacia para produccion. Solo se cambia para generar vistas previas antes de copiar la carpeta uploads.",
+  "baseImagenes": "",
+  "analytics": {
+    "_nota": "ID de medicion de Google Analytics (G-XXXXXXX). Vacio = no se inserta el snippet.",
+    "google": "G-H4RG2R2Y4T"
+  },
+  "navegacion": [
+    {
+      "texto": "Pintor",
+      "url": "/"
+    },
+    {
+      "texto": "Empresa",
+      "url": "/empresa/"
+    },
+    {
+      "texto": "Precios",
+      "url": "/precio/"
+    },
+    {
+      "texto": "Servicios",
+      "url": "/servicios-pintura/",
+      "hijos": [
+        {
+          "texto": "Pintor de Casa",
+          "url": "/casa/"
+        },
+        {
+          "texto": "Pintor industrial",
+          "url": "/pintores-industriales/"
+        },
+        {
+          "texto": "Pintor piso",
+          "url": "/pintor-piso/"
+        },
+        {
+          "texto": "Pintor Mural",
+          "url": "/pintor-mural/"
+        },
+        {
+          "texto": "Pintor de interiores",
+          "url": "/pintores-de-interiores/"
+        },
+        {
+          "texto": "Pintor de paredes y techos",
+          "url": "/pintor-de-paredes-y-techos/"
+        },
+        {
+          "texto": "Pintores de piscinas",
+          "url": "/pintor-piscinas/"
+        },
+        {
+          "texto": "Pintores de fachadas",
+          "url": "/pintores-de-fachadas/"
+        },
+        {
+          "texto": "Pintor de brocha gorda",
+          "url": "/pintor-de-brocha-gorda/"
+        },
+        {
+          "texto": "Pintor de muebles",
+          "url": "/pintor-muebles/"
+        },
+        {
+          "texto": "Pintores baratos",
+          "url": "/baratos/"
+        },
+        {
+          "texto": "Pintores Económicos",
+          "url": "/economicos/"
+        }
+      ]
+    },
+    {
+      "texto": "Tienda",
+      "url": "/tienda-pinturas/"
+    },
+    {
+      "texto": "Presupuesto",
+      "url": "/presupuesto/"
+    },
+    {
+      "texto": "Contacto",
+      "url": "/contacto/"
+    },
+    {
+      "texto": "Zonas",
+      "hijos": [
+        {
+          "texto": "Pintores en Torrent",
+          "url": "/torrent/"
+        },
+        {
+          "texto": "Pintores en Gandía",
+          "url": "/gandia/"
+        },
+        {
+          "texto": "Pintores en Alboraya",
+          "url": "/alboraya/"
+        },
+        {
+          "texto": "Pintor Paterna",
+          "url": "/paterna/"
+        },
+        {
+          "texto": "Pintores Sagunto",
+          "url": "/sagunto/"
+        },
+        {
+          "texto": "Pintores Alzira",
+          "url": "/alzira/"
+        },
+        {
+          "texto": "Pintores Mislata",
+          "url": "/mislata/"
+        },
+        {
+          "texto": "Pintores en Burjassot",
+          "url": "/burjassot/"
+        },
+        {
+          "texto": "Pintores Ontinyent",
+          "url": "/ontinyent/"
+        },
+        {
+          "texto": "Pintores Aldaia",
+          "url": "/pintores-aldaia/"
+        },
+        {
+          "texto": "Pintores Manises",
+          "url": "/pintores-manises/"
+        },
+        {
+          "texto": "Pintores Xirivella/Chirivella",
+          "url": "/xirivella/"
+        },
+        {
+          "texto": "Pintores Xàtiva",
+          "url": "/pintores-xativa/"
+        },
+        {
+          "texto": "Pintores Alaquàs",
+          "url": "/pintores-alaquas/"
+        },
+        {
+          "texto": "Pintores en Catarroja",
+          "url": "/pintores-en-catarroja/"
+        },
+        {
+          "texto": "Pintores en Sueca",
+          "url": "/sueca/"
+        },
+        {
+          "texto": "Pintores en Algemesí",
+          "url": "/algemesi/"
+        },
+        {
+          "texto": "Pintores en Paiporta",
+          "url": "/paiporta/"
+        },
+        {
+          "texto": "Pintores en Bétera",
+          "url": "/betera/"
+        },
+        {
+          "texto": "Pintores Pobla de Vallbona",
+          "url": "/pobla-de-vallbona/"
+        },
+        {
+          "texto": "Pintor Oliva",
+          "url": "/pintor-oliva/"
+        },
+        {
+          "texto": "Pintores Quart de Poblet",
+          "url": "/pintores-quart-de-poblet/"
+        },
+        {
+          "texto": "Pintores en Llíria",
+          "url": "/pintores-en-lliria/"
+        },
+        {
+          "texto": "Pintores Ribarroja del Turia",
+          "url": "/ribarroja-del-turia/"
+        },
+        {
+          "texto": "Pintores Cullera",
+          "url": "/cullera/"
+        },
+        {
+          "texto": "Pintores Moncada",
+          "url": "/moncada/"
+        },
+        {
+          "texto": "Pintores en Picassent",
+          "url": "/picassent/"
+        },
+        {
+          "texto": "Pintores en Carcaixent",
+          "url": "/carcaixent/"
+        },
+        {
+          "texto": "Pintores en Puzol",
+          "url": "/puzol/"
+        },
+        {
+          "texto": "Pintores en Requena",
+          "url": "/requena/"
+        },
+        {
+          "texto": "Pintores en Silla",
+          "url": "/silla/"
+        },
+        {
+          "texto": "Pintores en Alfafar",
+          "url": "/alfafar/"
+        },
+        {
+          "texto": "Pintores en Carlet",
+          "url": "/carlet/"
+        },
+        {
+          "texto": "Pintores en Massamagrell",
+          "url": "/massamagrell/"
+        },
+        {
+          "texto": "Pintores en Chiva",
+          "url": "/chiva/"
+        },
+        {
+          "texto": "Pintores en Albal",
+          "url": "/albal/"
+        },
+        {
+          "texto": "Pintores Tavernes de Valldigna",
+          "url": "/tavernes-de-valldigna/"
+        },
+        {
+          "texto": "Pintores Eliana",
+          "url": "/eliana/"
+        },
+        {
+          "texto": "Pintores en Benetússer",
+          "url": "/benetusser/"
+        },
+        {
+          "texto": "Pintores en Alginet",
+          "url": "/alginet/"
+        },
+        {
+          "texto": "Pintores en Canals",
+          "url": "/canals/"
+        },
+        {
+          "texto": "Pintores en Godella",
+          "url": "/godella/"
+        },
+        {
+          "texto": "Pintores en Alcudia",
+          "url": "/alcudia/"
+        },
+        {
+          "texto": "Pintores en Benifaió",
+          "url": "/benifaio/"
+        },
+        {
+          "texto": "Pintores en Picanya",
+          "url": "/picanya/"
+        },
+        {
+          "texto": "Pintores en Benaguasil",
+          "url": "/benaguasil/"
+        },
+        {
+          "texto": "Pintores en Utiel",
+          "url": "/utiel/"
+        },
+        {
+          "texto": "Pintores en Meliana",
+          "url": "/meliana/"
+        },
+        {
+          "texto": "Pintores en Alberic",
+          "url": "/alberic/"
+        },
+        {
+          "texto": "Pintores en Alcasser",
+          "url": "/alcasser/"
+        },
+        {
+          "texto": "Pintores en Sedaví",
+          "url": "/sedavi/"
+        },
+        {
+          "texto": "Pintores en Vilamarxant",
+          "url": "/vilamarxant/"
+        },
+        {
+          "texto": "Pintores en Massanassa",
+          "url": "/massanassa/"
+        },
+        {
+          "texto": "Pintores en San Antonio Benagéber",
+          "url": "/san-antonio-benageber/"
+        },
+        {
+          "texto": "Pintores en Buñol",
+          "url": "/bunol/"
+        },
+        {
+          "texto": "Pintores en Rafelbuñol-Rafelbunyol",
+          "url": "/rafelbunol-rafelbunyol/"
+        },
+        {
+          "texto": "Pintores en Tavernes Blanques",
+          "url": "/tavernes-blanques/"
+        },
+        {
+          "texto": "Pintores en Montserrat",
+          "url": "/montserrat/"
+        },
+        {
+          "texto": "Pintores en Cheste",
+          "url": "/cheste/"
+        },
+        {
+          "texto": "Pintores en Almussafes",
+          "url": "/almussafes/"
+        },
+        {
+          "texto": "Pintores en Puig",
+          "url": "/puig/"
+        },
+        {
+          "texto": "Pintores en Pobla de Farnals",
+          "url": "/pobla-de-farnals/"
+        },
+        {
+          "texto": "Pintores en Ollería",
+          "url": "/olleria/"
+        },
+        {
+          "texto": "Pintores en Naquera",
+          "url": "/naquera/"
+        },
+        {
+          "texto": "Pintores en Rocafort",
+          "url": "/rocafort/"
+        },
+        {
+          "texto": "Pintores en Foios",
+          "url": "/foios/"
+        },
+        {
+          "texto": "Pintores en Almassera",
+          "url": "/almassera/"
+        },
+        {
+          "texto": "Pintores en Turís",
+          "url": "/turis/"
+        },
+        {
+          "texto": "Pintores en Canet de Berenguer",
+          "url": "/canet-de-berenguer/"
+        },
+        {
+          "texto": "Pintores en Villanueva de Castellón",
+          "url": "/villanueva-de-castellon/"
+        },
+        {
+          "texto": "Pintores en Museros",
+          "url": "/museros/"
+        },
+        {
+          "texto": "Pintores en Albaida",
+          "url": "/albaida/"
+        },
+        {
+          "texto": "Pintores en Guadassuar",
+          "url": "/guadassuar/"
+        },
+        {
+          "texto": "Pintores en Benicalap",
+          "url": "/benicalap/"
+        },
+        {
+          "texto": "Pintores en Torrefiel",
+          "url": "/torrefiel/"
+        },
+        {
+          "texto": "Pintores en Nou Moles",
+          "url": "/nou-moles/"
+        },
+        {
+          "texto": "Pintores en Ayora",
+          "url": "/ayora/"
+        },
+        {
+          "texto": "Pintores en Patraix",
+          "url": "/patraix/"
+        },
+        {
+          "texto": "Pintores en Ruzafa",
+          "url": "/ruzafa/"
+        },
+        {
+          "texto": "Pintores en Benimaclet",
+          "url": "/benimaclet/"
+        },
+        {
+          "texto": "Pintores en Arrancapins",
+          "url": "/arrancapins/"
+        },
+        {
+          "texto": "Pintores en Malilla",
+          "url": "/malilla/"
+        },
+        {
+          "texto": "Pintores en Monteolivete",
+          "url": "/monteolivete/"
+        },
+        {
+          "texto": "Pintores en Cabañal",
+          "url": "/cabanal/"
+        },
+        {
+          "texto": "Pintores en Sant Pau",
+          "url": "/sant-pau/"
+        },
+        {
+          "texto": "Pintores en L’Hort de Senabre",
+          "url": "/lhort-de-senabre/"
+        },
+        {
+          "texto": "Pintores en Orriols",
+          "url": "/orriols/"
+        },
+        {
+          "texto": "Pintores en La Raiosa",
+          "url": "/la-raiosa/"
+        },
+        {
+          "texto": "Pintores La Creu del Grau",
+          "url": "/la-creu-del-grau/"
+        },
+        {
+          "texto": "Pintores en Mestalla",
+          "url": "/mestalla/"
+        },
+        {
+          "texto": "Pintores en Blasco Ibáñez",
+          "url": "/blasco-ibanez/"
+        },
+        {
+          "texto": "Pintores en Benimamet",
+          "url": "/benimamet/"
+        },
+        {
+          "texto": "Pintores en Malvarrosa",
+          "url": "/malvarrosa/"
+        },
+        {
+          "texto": "Pintores en el Carmen",
+          "url": "/el-carmen/"
+        },
+        {
+          "texto": "Pintores en Campanar",
+          "url": "/campanar/"
+        }
+      ]
+    }
+  ],
+  "pie": {
+    "copyright": "Pintor Valencia",
+    "enlaces": [
+      {
+        "texto": "Aviso legal",
+        "url": "/aviso-legal/"
+      },
+      {
+        "texto": "Política de privacidad",
+        "url": "/politica-de-privacidad/"
+      },
+      {
+        "texto": "Política de cookies",
+        "url": "/politica-de-cookies/"
+      }
+    ]
+  },
+  "formulario": {
+    "proveedor": "Web3Forms",
+    "endpoint": "https://api.web3forms.com/submit",
+    "accessKey": "PENDIENTE-PEGAR-ACCESS-KEY",
+    "asunto": "Nueva consulta desde pintor-valencia.com",
+    "redireccion": "https://pintor-valencia.com/gracias/"
+  },
+  "verificaciones": {
+    "_nota": "Etiquetas de verificacion que Yoast inyecta en el <head>. Copiar solo el valor del content, no la etiqueta entera.",
+    "google": "PENDIENTE",
+    "bing": "PENDIENTE"
+  }
+}

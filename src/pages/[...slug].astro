@@ -1,0 +1,41 @@
+---
+/* Una sola ruta dinámica para las 117 páginas interiores. Cada una se
+   pinta desde su JSON de src/content/pages/. La portada tiene su propio
+   index.astro porque vive en la raíz. */
+import Base from '../layouts/Base.astro';
+import { sustituirFaltantes } from '../utils/imagenes.js';
+import ContactForm from '../components/ContactForm.astro';
+import site from '../data/site.json';
+
+/* WordPress servia estas dos con Contact Form 7. El formulario se quito
+   en extraer.py y lo pone aqui el componente, que envia por Web3Forms. */
+const CON_FORMULARIO = new Set(['/contacto/', '/presupuesto/']);
+
+export function getStaticPaths() {
+  const modulos = import.meta.glob('../content/pages/*.json', { eager: true });
+  return Object.values(modulos)
+    .map((m) => m.default ?? m)
+    .filter((p) => p.url && p.url !== '/')
+    .map((p) => ({ params: { slug: p.url.replace(/^\/|\/$/g, '') }, props: { pagina: p } }));
+}
+
+const { pagina } = Astro.props;
+
+// Las rutas de imagen viven en el JSON como rutas relativas.
+// baseImagenes solo se rellena para generar vistas previas.
+const htmlBruto = site.baseImagenes
+  ? pagina.html.replaceAll('src="/wp-content/', `src="${site.baseImagenes}/wp-content/`)
+  : pagina.html;
+const html = sustituirFaltantes(htmlBruto);
+---
+<Base pagina={pagina} baseImagenes={site.baseImagenes}>
+  {CON_FORMULARIO.has(pagina.url) && (
+    <section class="seccion">
+      <div class="contenedor">
+        <div class="prosa"><h2>Pide tu presupuesto sin compromiso</h2></div>
+        <ContactForm />
+      </div>
+    </section>
+  )}
+  <Fragment set:html={html} />
+</Base>

@@ -1,0 +1,20 @@
+---
+import Base from '../layouts/Base.astro';
+const pagina = {
+  titulo: 'Mensaje enviado', url: '/gracias/', slug: 'gracias',
+  h1: 'Mensaje enviado', entradilla: 'Gracias por escribirnos. Te respondemos lo antes posible.',
+  cta: null, hero: null, faq: [], noindex: true,
+  metaTitulo: 'Mensaje enviado - Pintor Valencia',
+  metaDescripcion: 'Hemos recibido tu consulta. Te responderemos lo antes posible.',
+};
+---
+<Base pagina={pagina}>
+  <section class="seccion">
+    <div class="contenedor">
+      <div class="prosa">
+        <p>Hemos recibido tu mensaje. Si es urgente, puedes escribirnos directamente.</p>
+        <p><a class="pildora" href="/">Volver a la portada</a></p>
+      </div>
+    </div>
+  </section>
+</Base>
