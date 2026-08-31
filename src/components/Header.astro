@@ -6,13 +6,18 @@ const img = (ruta) => site.baseImagenes + ruta;
 const activo = (i) =>
   i.url === rutaActual ||
   (i.hijos || []).some((h) => h.url.split('#')[0] === rutaActual);
+
+// No mostrar el aviso del email mientras siga con el marcador PENDIENTE.
+const emailPuesto = site.email && !site.email.startsWith('PENDIENTE');
 ---
 <header class="cabecera">
-  <div class="cabecera__aviso">
-    <div class="contenedor">
-      <a href={`mailto:${site.email}`}>{site.email}</a>
+  {emailPuesto && (
+    <div class="cabecera__aviso">
+      <div class="contenedor">
+        <a href={`mailto:${site.email}`}>{site.email}</a>
+      </div>
     </div>
-  </div>
+  )}
 
   <div class="contenedor cabecera__barra">
     <a class="cabecera__logo" href="/">
