@@ -1602,3 +1602,73 @@ a:hover { color: var(--azul-osc); }
   border: 0;
   border-radius: var(--radio, 8px);
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   REDISEÑO PROFESIONAL — capa de mejoras visuales (solo CSS)
+   Añadida al final a propósito: gana en la cascada sobre las reglas
+   anteriores. No cambia HTML, textos ni titulares.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* --- Imágenes de contenido sueltas -----------------------------
+   Las <figure> que cuelgan directas de .contenedor (hermanas de
+   .prosa) salían a su tamaño intrínseco (300/500px) y pegadas a la
+   izquierda. Se centran, se enmarcan como tarjeta y se acotan, sin
+   recortar ni ampliar (se respeta su proporción y su nitidez). */
+.seccion .contenedor > figure {
+  margin: var(--e-4) auto;
+  text-align: center;
+  max-width: 100%;
+}
+.seccion .contenedor > figure > a { display: inline-block; line-height: 0; }
+.seccion .contenedor > figure img {
+  display: inline-block;
+  width: auto;
+  max-width: min(100%, 540px);
+  height: auto;
+  border-radius: 16px;
+  border: 1px solid var(--borde);
+  box-shadow: 0 14px 40px rgba(28,36,75,.12);
+  background: var(--papel-alt);
+}
+
+/* --- Sección de servicios (h3 + imagen alternos) ----------------
+   Deja el rótulo pegado a su imagen, como un pie de foto, y aprieta
+   el ritmo para que no queden huecos enormes entre pares. */
+.seccion--alt .contenedor > .prosa:has(> h3:only-child) {
+  margin-bottom: 0;
+  text-align: center;
+}
+.seccion--alt .contenedor > .prosa:has(> h3:only-child) + figure {
+  margin-top: var(--e-2);
+}
+
+/* --- Ritmo general de la portada -------------------------------
+   Un poco más de aire bajo el hero y separación uniforme entre
+   secciones para que la página respire y se lea ordenada. */
+.hero + .contenedor.portada { padding-top: var(--e-4); }
+.seccion h2 + p,
+.seccion .prosa > h2 + p { margin-inline: auto; max-width: 52rem; }
+
+/* --- Enlaces sueltos de texto (EMPRESA, DISEÑO 3D, PINTURERIA) ---
+   Aparecían como enlaces subrayados sueltos y descolgados. Se les
+   da forma de botón secundario discreto y centrado. */
+.seccion .contenedor > .prosa > a:not(.pildora) {
+  display: inline-block;
+  margin-top: var(--e-2);
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: var(--t-sm);
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--azul-osc);
+  padding: .6rem 1.6rem;
+  border: 2px solid var(--borde-fuerte);
+  border-radius: 999px;
+  transition: border-color .16s, color .16s, background .16s;
+}
+.seccion .contenedor > .prosa > a:not(.pildora):hover {
+  border-color: var(--azul);
+  background: var(--azul);
+  color: #fff;
+}
