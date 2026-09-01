@@ -1,0 +1,32 @@
+{
+  "titulo": "Microcemento",
+  "url": "/microcemento/",
+  "slug": "microcemento",
+  "h1": "Microcemento en Valencia",
+  "entradilla": "<strong>Microcemento</strong> en Valencia para suelos, paredes, baños y cocinas: acabado continuo, moderno y sin obra.",
+  "cta": {
+    "url": "/presupuesto/",
+    "texto": "PIDE PRESUPUESTO"
+  },
+  "hero": "/wp-content/uploads/2023/12/servicios-de-pintura.jpg",
+  "metaTitulo": "Microcemento Valencia - Suelos y paredes sin obra - Pintor Valencia",
+  "metaDescripcion": "Microcemento en Valencia para suelos, paredes, baños y cocinas. Acabado continuo y moderno, sin obra y con gran resistencia.",
+  "focusKeyword": "microcemento valencia",
+  "imagenPrincipal": "/wp-content/uploads/2023/12/servicios-de-pintura.jpg",
+  "faq": [
+    {
+      "pregunta": "¿Se puede poner microcemento sobre azulejos?",
+      "respuesta": "Sí, es una de sus grandes ventajas: se aplica encima de azulejos o suelos existentes sin picar."
+    },
+    {
+      "pregunta": "¿El microcemento es impermeable?",
+      "respuesta": "Con el sellado adecuado es impermeable, por eso es ideal para baños y duchas."
+    },
+    {
+      "pregunta": "¿Cuánto tarda en aplicarse?",
+      "respuesta": "Varía según la superficie, pero suele necesitar varios días por las capas y secados."
+    }
+  ],
+  "botones": {},
+  "html": "<section class=\"seccion seccion--alt\"><div class=\"contenedor\"><div class=\"prosa\"><h2>Qué es el microcemento</h2><p>El <strong>microcemento</strong> es un revestimiento continuo de pocos milímetros que se aplica sobre suelos y paredes sin necesidad de obra.</p><p>Consigue un acabado moderno tipo cemento pulido, muy resistente e impermeable, ideal para baños, cocinas y suelos.</p></div></div></section><section class=\"seccion\"><div class=\"contenedor\"><div class=\"prosa\"><h2>Dónde aplicamos microcemento</h2><ul><li>Suelos de viviendas y locales</li><li>Paredes de salón y dormitorios</li><li>Baños y platos de ducha</li><li>Encimeras y frentes de cocina</li><li>Escaleras y peldaños</li><li>Terrazas y zonas húmedas</li></ul></div></div></section><section class=\"seccion seccion--alt\"><div class=\"contenedor\"><div class=\"prosa\"><h2>Ventajas del microcemento</h2><ul><li>Se aplica sin obra, sobre el material existente</li><li>Acabado continuo, sin juntas</li><li>Muy resistente e impermeable</li><li>Estilo moderno y minimalista</li><li>Amplia gama de colores y texturas</li></ul></div></div></section><section class=\"seccion seccion--alt\"><div class=\"contenedor\"><div class=\"prosa\"><h2>Preguntas frecuentes</h2></div><div class=\"acordeon\"><details class=\"pregunta\"><summary>¿Se puede poner microcemento sobre azulejos?</summary><div class=\"pregunta__resp\"><p>Sí, es una de sus grandes ventajas: se aplica encima de azulejos o suelos existentes sin picar.</p></div></details><details class=\"pregunta\"><summary>¿El microcemento es impermeable?</summary><div class=\"pregunta__resp\"><p>Con el sellado adecuado es impermeable, por eso es ideal para baños y duchas.</p></div></details><details class=\"pregunta\"><summary>¿Cuánto tarda en aplicarse?</summary><div class=\"pregunta__resp\"><p>Varía según la superficie, pero suele necesitar varios días por las capas y secados.</p></div></details></div></div></section><section class=\"seccion seccion--alt\"><div class=\"contenedor\"><div class=\"prosa\"><h2>Microcemento en Valencia</h2><p>¿Te gusta el estilo cemento pulido? En <strong>Pintor-valencia.com</strong> te damos <strong>presupuesto sin compromiso</strong>.</p></div></div></section>"
+}

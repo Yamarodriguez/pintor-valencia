@@ -5,16 +5,16 @@
    presupuesto para captar la consulta. Editar la lista aquí lo cambia
    en todo el sitio a la vez. */
 const servicios = [
-  'Pintura de exteriores',
-  'Pintura decorativa y estucos',
-  'Empapelado y papel pintado',
-  'Microcemento',
-  'Barnizado de madera',
-  'Tratamiento de humedades y moho',
-  'Pintura de comunidades de vecinos',
-  'Pintura de locales y oficinas',
-  'Suelos epoxi para garajes',
-  'Pintura ecológica y antibacteriana',
+  { texto: 'Pintura de exteriores', url: '/pintura-de-exteriores/' },
+  { texto: 'Pintura decorativa y estucos', url: '/pintura-decorativa-estucos/' },
+  { texto: 'Empapelado y papel pintado', url: '/empapelado-papel-pintado/' },
+  { texto: 'Microcemento', url: '/microcemento/' },
+  { texto: 'Barnizado de madera', url: '/barnizado-de-madera/' },
+  { texto: 'Tratamiento de humedades y moho', url: '/tratamiento-humedades-moho/' },
+  { texto: 'Pintura de comunidades de vecinos', url: '/pintores-para-comunidades/' },
+  { texto: 'Pintura de locales y oficinas', url: '/pintores-para-empresas/' },
+  { texto: 'Suelos epoxi para garajes', url: '/suelos-epoxi-garajes/' },
+  { texto: 'Pintura ecológica y antibacteriana', url: '/pintura-ecologica-antibacteriana/' },
 ];
 ---
 <section class="seccion seccion--alt">
@@ -25,7 +25,7 @@ const servicios = [
     </div>
     <ul class="zonas">
       {servicios.map((s) => (
-        <li><a href="/presupuesto/">{s}</a></li>
+        <li><a href={s.url}>{s.texto}</a></li>
       ))}
     </ul>
   </div>

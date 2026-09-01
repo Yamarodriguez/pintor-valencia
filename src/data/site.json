@@ -119,6 +119,38 @@
         {
           "texto": "Diseño 3D",
           "url": "/diseno-3d/"
+        },
+        {
+          "texto": "Pintura de exteriores",
+          "url": "/pintura-de-exteriores/"
+        },
+        {
+          "texto": "Pintura decorativa y estucos",
+          "url": "/pintura-decorativa-estucos/"
+        },
+        {
+          "texto": "Empapelado y papel pintado",
+          "url": "/empapelado-papel-pintado/"
+        },
+        {
+          "texto": "Microcemento",
+          "url": "/microcemento/"
+        },
+        {
+          "texto": "Barnizado de madera",
+          "url": "/barnizado-de-madera/"
+        },
+        {
+          "texto": "Tratamiento de humedades y moho",
+          "url": "/tratamiento-humedades-moho/"
+        },
+        {
+          "texto": "Suelos epoxi para garajes",
+          "url": "/suelos-epoxi-garajes/"
+        },
+        {
+          "texto": "Pintura ecológica y antibacteriana",
+          "url": "/pintura-ecologica-antibacteriana/"
         }
       ]
     },

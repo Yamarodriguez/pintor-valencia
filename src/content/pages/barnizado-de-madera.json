@@ -1,0 +1,32 @@
+{
+  "titulo": "Barnizado de madera",
+  "url": "/barnizado-de-madera/",
+  "slug": "barnizado-de-madera",
+  "h1": "Barnizado de madera en Valencia",
+  "entradilla": "<strong>Barnizado de madera</strong> en Valencia: puertas, muebles, vigas y suelos protegidos y renovados con barnices de calidad.",
+  "cta": {
+    "url": "/presupuesto/",
+    "texto": "PIDE PRESUPUESTO"
+  },
+  "hero": "/wp-content/uploads/2023/11/lacados.jpg",
+  "metaTitulo": "Barnizado de Madera Valencia - Puertas, muebles y vigas - Pintor Valencia",
+  "metaDescripcion": "Barnizado de madera en Valencia: puertas, muebles, vigas y suelos. Lijado y barnizado profesional para proteger y renovar la madera.",
+  "focusKeyword": "barnizado de madera valencia",
+  "imagenPrincipal": "/wp-content/uploads/2023/11/lacados.jpg",
+  "faq": [
+    {
+      "pregunta": "¿Barnizáis madera de exterior?",
+      "respuesta": "Sí, usamos barnices específicos de exterior que resisten el sol y la lluvia."
+    },
+    {
+      "pregunta": "¿Hay que lijar antes de barnizar?",
+      "respuesta": "Sí, el lijado es clave para que el barniz agarre bien y el acabado sea liso."
+    },
+    {
+      "pregunta": "¿Podéis cambiar el tono de la madera?",
+      "respuesta": "Sí, con tintes y barnices coloreados podemos aclarar u oscurecer la madera."
+    }
+  ],
+  "botones": {},
+  "html": "<section class=\"seccion seccion--alt\"><div class=\"contenedor\"><div class=\"prosa\"><h2>Qué es el barnizado de madera</h2><p>El <strong>barnizado</strong> protege la madera del desgaste, la humedad y el sol, y realza su veta natural.</p><p>Lijamos, tratamos y barnizamos con acabados mate, satinado o brillante para que tus elementos de madera luzcan como nuevos.</p></div></div></section><section class=\"seccion\"><div class=\"contenedor\"><div class=\"prosa\"><h2>Elementos de madera que barnizamos</h2><ul><li>Puertas y ventanas de madera</li><li>Muebles y estanterías</li><li>Vigas y techos de madera</li><li>Suelos y tarimas</li><li>Barandillas y escaleras</li><li>Madera de exterior y pérgolas</li></ul></div></div></section><section class=\"seccion seccion--alt\"><div class=\"contenedor\"><div class=\"prosa\"><h2>Ventajas del barnizado profesional</h2><ul><li>Protege la madera y alarga su vida</li><li>Realza la veta y el color natural</li><li>Acabado mate, satinado o brillante</li><li>Resistente al agua y al desgaste</li><li>Renueva sin sustituir la madera</li></ul></div></div></section><section class=\"seccion seccion--alt\"><div class=\"contenedor\"><div class=\"prosa\"><h2>Preguntas frecuentes</h2></div><div class=\"acordeon\"><details class=\"pregunta\"><summary>¿Barnizáis madera de exterior?</summary><div class=\"pregunta__resp\"><p>Sí, usamos barnices específicos de exterior que resisten el sol y la lluvia.</p></div></details><details class=\"pregunta\"><summary>¿Hay que lijar antes de barnizar?</summary><div class=\"pregunta__resp\"><p>Sí, el lijado es clave para que el barniz agarre bien y el acabado sea liso.</p></div></details><details class=\"pregunta\"><summary>¿Podéis cambiar el tono de la madera?</summary><div class=\"pregunta__resp\"><p>Sí, con tintes y barnices coloreados podemos aclarar u oscurecer la madera.</p></div></details></div></div></section><section class=\"seccion seccion--alt\"><div class=\"contenedor\"><div class=\"prosa\"><h2>Barnizado de madera en Valencia</h2><p>¿Tu madera necesita un lavado de cara? En <strong>Pintor-valencia.com</strong> te damos <strong>presupuesto sin compromiso</strong>.</p></div></div></section>"
+}
