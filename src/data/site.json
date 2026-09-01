@@ -33,6 +33,22 @@
           "url": "/casa/"
         },
         {
+          "texto": "Pintores Particulares",
+          "url": "/pintores-particulares/"
+        },
+        {
+          "texto": "Pintores para Empresas",
+          "url": "/pintores-para-empresas/"
+        },
+        {
+          "texto": "Pintores para Comunidades",
+          "url": "/pintores-para-comunidades/"
+        },
+        {
+          "texto": "Remodelaciones y reformas",
+          "url": "/remodelaciones-reformas-proyectos/"
+        },
+        {
           "texto": "Pintor industrial",
           "url": "/pintores-industriales/"
         },

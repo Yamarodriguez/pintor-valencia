@@ -1,0 +1,32 @@
+{
+  "titulo": "Pintores Particulares",
+  "url": "/pintores-particulares/",
+  "slug": "pintores-particulares",
+  "h1": "Pintores para particulares en Valencia",
+  "entradilla": "<strong>Pintores para particulares</strong> en Valencia: pintamos tu casa, piso o vivienda con trato cercano, limpieza y presupuesto claro.",
+  "cta": {
+    "url": "/presupuesto/",
+    "texto": "PIDE PRESUPUESTO"
+  },
+  "hero": "/wp-content/uploads/2023/11/pintor-casa.jpg",
+  "metaTitulo": "Pintores Particulares Valencia - Pintor de viviendas - Pintor Valencia",
+  "metaDescripcion": "Pintores para particulares en Valencia. Pintamos casas, pisos y viviendas con acabados de calidad, orden y presupuesto sin compromiso.",
+  "focusKeyword": "pintores particulares valencia",
+  "imagenPrincipal": "/wp-content/uploads/2023/11/pintor-casa.jpg",
+  "faq": [
+    {
+      "pregunta": "¿Tengo que vaciar la casa antes de pintar?",
+      "respuesta": "No hace falta. Retiramos y protegemos los muebles con plásticos y cubrimos el suelo; solo te pedimos guardar los objetos personales pequeños."
+    },
+    {
+      "pregunta": "¿Cuánto se tarda en pintar un piso?",
+      "respuesta": "Un piso medio suele pintarse en dos o tres días, según su tamaño y el estado de las paredes."
+    },
+    {
+      "pregunta": "¿El presupuesto es gratis?",
+      "respuesta": "Sí. Valoramos el trabajo y te damos un presupuesto sin compromiso antes de empezar."
+    }
+  ],
+  "botones": {},
+  "html": "<section class=\"seccion seccion--alt\"><div class=\"contenedor\"><div class=\"prosa\"><h2>Pintores para particulares de confianza</h2><p>Como <strong>pintores para particulares</strong> en Valencia, pintamos viviendas de principio a fin cuidando cada detalle: protegemos tus muebles, trabajamos con orden y dejamos todo limpio al terminar.</p><p>Te asesoramos con los colores y los acabados, y te damos un <strong>presupuesto claro y sin compromiso</strong> antes de empezar.</p></div></div></section><section class=\"seccion\"><div class=\"contenedor\"><div class=\"prosa\"><h2>Qué pintamos en tu vivienda</h2><ul><li>Pisos y casas completas antes de mudarte</li><li>Salones, dormitorios, cocinas y baños</li><li>Paredes y techos, lisos o con gotelé</li><li>Puertas, ventanas y radiadores</li><li>Terrazas, exteriores y trasteros</li><li>Pequeños arreglos y retoques de pintura</li></ul></div></div></section><section class=\"seccion seccion--alt\"><div class=\"contenedor\"><div class=\"prosa\"><h2>Por qué elegirnos</h2><ul><li>Trato directo y cercano, sin intermediarios</li><li>Presupuesto cerrado, sin sorpresas</li><li>Materiales y marcas de primera calidad</li><li>Puntualidad y respeto por tu horario</li><li>Limpieza total al finalizar el trabajo</li></ul></div></div></section><section class=\"seccion seccion--alt\"><div class=\"contenedor\"><div class=\"prosa\"><h2>Preguntas frecuentes</h2></div><div class=\"acordeon\"><details class=\"pregunta\"><summary>¿Tengo que vaciar la casa antes de pintar?</summary><div class=\"pregunta__resp\"><p>No hace falta. Retiramos y protegemos los muebles con plásticos y cubrimos el suelo; solo te pedimos guardar los objetos personales pequeños.</p></div></details><details class=\"pregunta\"><summary>¿Cuánto se tarda en pintar un piso?</summary><div class=\"pregunta__resp\"><p>Un piso medio suele pintarse en dos o tres días, según su tamaño y el estado de las paredes.</p></div></details><details class=\"pregunta\"><summary>¿El presupuesto es gratis?</summary><div class=\"pregunta__resp\"><p>Sí. Valoramos el trabajo y te damos un presupuesto sin compromiso antes de empezar.</p></div></details></div></div></section><section class=\"seccion seccion--alt\"><div class=\"contenedor\"><div class=\"prosa\"><h2>Pintores para particulares en Valencia</h2><p>¿Quieres renovar tu casa? En <strong>Pintor-valencia.com</strong> te damos <strong>presupuesto sin compromiso</strong>. Cuéntanos qué necesitas y nos encargamos de todo.</p></div></div></section>"
+}

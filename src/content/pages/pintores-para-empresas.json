@@ -1,0 +1,32 @@
+{
+  "titulo": "Pintores para Empresas",
+  "url": "/pintores-para-empresas/",
+  "slug": "pintores-para-empresas",
+  "h1": "Pintores para empresas en Valencia",
+  "entradilla": "<strong>Pintores para empresas</strong> en Valencia: oficinas, locales comerciales, naves y negocios con mínimas molestias y factura.",
+  "cta": {
+    "url": "/presupuesto/",
+    "texto": "PIDE PRESUPUESTO"
+  },
+  "hero": "/wp-content/uploads/2023/11/empresa-pintores.jpg",
+  "metaTitulo": "Pintores para Empresas Valencia - Pintura de oficinas y locales - Pintor Valencia",
+  "metaDescripcion": "Pintores para empresas en Valencia: oficinas, locales, comercios y naves. Trabajos rápidos, en horario flexible y con factura.",
+  "focusKeyword": "pintores para empresas valencia",
+  "imagenPrincipal": "/wp-content/uploads/2023/11/empresa-pintores.jpg",
+  "faq": [
+    {
+      "pregunta": "¿Podéis pintar fuera del horario comercial?",
+      "respuesta": "Sí. Trabajamos por las noches y en fin de semana para que tu negocio siga abierto con normalidad."
+    },
+    {
+      "pregunta": "¿Emitís factura?",
+      "respuesta": "Por supuesto. Todos nuestros trabajos para empresas se facturan con IVA."
+    },
+    {
+      "pregunta": "¿Hacéis mantenimiento periódico?",
+      "respuesta": "Sí, ofrecemos planes de repintado y mantenimiento para mantener tus instalaciones siempre a punto."
+    }
+  ],
+  "botones": {},
+  "html": "<section class=\"seccion seccion--alt\"><div class=\"contenedor\"><div class=\"prosa\"><h2>Pintura profesional para tu negocio</h2><p>Somos <strong>pintores para empresas</strong> en Valencia. Pintamos oficinas, locales, comercios y naves adaptándonos a tu actividad para que tu negocio no se pare.</p><p>Trabajamos en <strong>horario flexible</strong> —noches y fines de semana si hace falta— y emitimos <strong>factura</strong> con todas las garantías.</p></div></div></section><section class=\"seccion\"><div class=\"contenedor\"><div class=\"prosa\"><h2>Servicios para empresas</h2><ul><li>Oficinas y espacios de trabajo</li><li>Locales comerciales y tiendas</li><li>Naves y almacenes industriales</li><li>Restaurantes, bares y hoteles</li><li>Pintura de suelos y señalización</li><li>Mantenimiento y repintado periódico</li></ul></div></div></section><section class=\"seccion seccion--alt\"><div class=\"contenedor\"><div class=\"prosa\"><h2>Ventajas para tu empresa</h2><ul><li>Adaptación total a tu horario y actividad</li><li>Plazos ajustados para minimizar el cierre</li><li>Presupuesto cerrado y factura</li><li>Materiales de alta durabilidad</li><li>Equipo profesional y asegurado</li></ul></div></div></section><section class=\"seccion seccion--alt\"><div class=\"contenedor\"><div class=\"prosa\"><h2>Preguntas frecuentes</h2></div><div class=\"acordeon\"><details class=\"pregunta\"><summary>¿Podéis pintar fuera del horario comercial?</summary><div class=\"pregunta__resp\"><p>Sí. Trabajamos por las noches y en fin de semana para que tu negocio siga abierto con normalidad.</p></div></details><details class=\"pregunta\"><summary>¿Emitís factura?</summary><div class=\"pregunta__resp\"><p>Por supuesto. Todos nuestros trabajos para empresas se facturan con IVA.</p></div></details><details class=\"pregunta\"><summary>¿Hacéis mantenimiento periódico?</summary><div class=\"pregunta__resp\"><p>Sí, ofrecemos planes de repintado y mantenimiento para mantener tus instalaciones siempre a punto.</p></div></details></div></div></section><section class=\"seccion seccion--alt\"><div class=\"contenedor\"><div class=\"prosa\"><h2>Pintores para empresas en Valencia</h2><p>¿Necesitas pintar tu oficina, local o nave? En <strong>Pintor-valencia.com</strong> te damos <strong>presupuesto sin compromiso</strong> adaptado a tu empresa.</p></div></div></section>"
+}
