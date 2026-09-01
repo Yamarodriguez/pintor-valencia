@@ -1,0 +1,32 @@
+---
+/* Bloque de "otros servicios" que se muestra en TODAS las páginas
+   (lo incluye Base.astro). Son servicios habituales de una empresa de
+   pintura que aún no tienen página propia; cada uno enlaza al
+   presupuesto para captar la consulta. Editar la lista aquí lo cambia
+   en todo el sitio a la vez. */
+const servicios = [
+  'Pintura de exteriores',
+  'Pintura decorativa y estucos',
+  'Empapelado y papel pintado',
+  'Microcemento',
+  'Barnizado de madera',
+  'Tratamiento de humedades y moho',
+  'Pintura de comunidades de vecinos',
+  'Pintura de locales y oficinas',
+  'Suelos epoxi para garajes',
+  'Pintura ecológica y antibacteriana',
+];
+---
+<section class="seccion seccion--alt">
+  <div class="contenedor">
+    <div class="prosa">
+      <h2>Otros servicios que ofrecemos</h2>
+      <p>Cuéntanos qué necesitas y te preparamos un presupuesto sin compromiso.</p>
+    </div>
+    <ul class="zonas">
+      {servicios.map((s) => (
+        <li><a href="/presupuesto/">{s}</a></li>
+      ))}
+    </ul>
+  </div>
+</section>
