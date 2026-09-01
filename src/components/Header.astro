@@ -9,6 +9,10 @@ const activo = (i) =>
 
 // No mostrar el aviso del email mientras siga con el marcador PENDIENTE.
 const emailPuesto = site.email && !site.email.startsWith('PENDIENTE');
+
+// Menú propio en la sección de escayola (/escayolista/ y /escayolista-*).
+const enEscayola = !!rutaActual && rutaActual.startsWith('/escayolista');
+const nav = (enEscayola && site.navegacionEscayola) ? site.navegacionEscayola : site.navegacion;
 ---
 <header class="cabecera">
   {emailPuesto && (
@@ -36,7 +40,7 @@ const emailPuesto = site.email && !site.email.startsWith('PENDIENTE');
 
     <nav class="menu__nav" aria-label="Principal">
       <ul class="nav">
-        {site.navegacion.map((item, n) => item.hijos ? (
+        {nav.map((item, n) => item.hijos ? (
           <li class:list={['nav__grupo', { 'es-activo': activo(item) }]}>
             <input type="checkbox" id={`grupo-${n}`} class="conmutador" />
             <div class="nav__fila">
