@@ -652,7 +652,7 @@
   "formulario": {
     "proveedor": "Web3Forms",
     "endpoint": "https://api.web3forms.com/submit",
-    "accessKey": "PENDIENTE-PEGAR-ACCESS-KEY",
+    "accessKey": "31751599-a8ff-4f53-aa3f-0e18aa7d212c",
     "asunto": "Nueva consulta desde pintor-valencia.com",
     "redireccion": "https://pintor-valencia.com/gracias/"
   },
