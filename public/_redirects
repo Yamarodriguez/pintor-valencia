@@ -9,6 +9,9 @@
 /category-sitemap.xml   /sitemap.xml   301
 /author-sitemap.xml     /sitemap.xml   301
 
+# --- Fusion de duplicados ---
+/economicos/     /baratos/      301
+
 # --- Restos de WordPress ---
 # 410 en vez de 404: le dice a Google que han desaparecido para siempre.
 /wp-admin/*      410
