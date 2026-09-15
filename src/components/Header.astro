@@ -12,7 +12,10 @@ const emailPuesto = site.email && !site.email.startsWith('PENDIENTE');
 
 // Menú propio en la sección de escayola (/escayolista/ y /escayolista-*).
 const enEscayola = !!rutaActual && rutaActual.startsWith('/escayolista');
-const nav = (enEscayola && site.navegacionEscayola) ? site.navegacionEscayola : site.navegacion;
+const enPladur = !!rutaActual && rutaActual.startsWith('/pladur');
+const nav = (enEscayola && site.navegacionEscayola) ? site.navegacionEscayola
+          : (enPladur && site.navegacionPladur) ? site.navegacionPladur
+          : site.navegacion;
 ---
 <header class="cabecera">
   {emailPuesto && (
