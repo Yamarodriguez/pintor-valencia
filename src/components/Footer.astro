@@ -1,11 +1,12 @@
 ---
 import site from '../data/site.json';
+import { puesta } from '../utils/negocio.js';
 const anio = new Date().getFullYear();
 ---
 <footer class="pie">
   <div class="contenedor">
     <p class="pie__marca">{site.nombre}</p>
-    <p><a href={`mailto:${site.email}`}>{site.email}</a></p>
+    {puesta(site.email) && <p><a href={`mailto:${site.email}`}>{site.email}</a></p>}
 
     {site.pie.enlaces.length > 0 && (
       <p>

@@ -16,6 +16,7 @@ const { pagina, baseImagenes = '' } = Astro.props;
    todavía, se sirve el marcador .svg del mismo nombre. */
 const declarado = heroes[pagina.url];
 import { resolverImagen, existe } from '../utils/imagenes.js';
+import { puesta, paginaLocal, SERVICIOS } from '../utils/negocio.js';
 const rutaHero = resolverImagen(pagina.hero ?? declarado?.imagen ?? null);
 
 /* Variante estrecha para móviles: se sirve si existe un archivo
@@ -49,16 +50,55 @@ function resolverTitulo(plantilla, titulo) {
 const titulo = resolverTitulo(pagina.metaTitulo, pagina.titulo);
 
 /* --- JSON-LD (regla 3) --- */
+/* HousePainter es el subtipo de LocalBusiness para empresas de pintura.
+   Se mantiene el @id antiguo para no romper referencias ya indexadas.
+   Teléfono y email solo salen cuando site.json los tenga rellenados. */
+const provincia = { '@type': 'AdministrativeArea', name: 'Provincia de Valencia' };
 const organizacion = {
-  '@type': 'Organization',
+  '@type': 'HousePainter',
   '@id': site.dominio + '/#organizacion',
   name: site.nombre,
   url: site.dominio,
-  ...(site.email && !site.email.startsWith('PENDIENTE') ? { email: site.email } : {}),
+  ...(puesta(site.email) ? { email: site.email } : {}),
   logo: { '@type': 'ImageObject', url: site.dominio + site.logo },
-  ...(site.contacto?.telefono && !site.contacto.telefono.startsWith('PENDIENTE')
-    ? { telephone: site.contacto.telefono } : {}),
-  areaServed: 'Valencia, España',
+  image: site.dominio + site.logo,
+  ...(puesta(site.contacto?.telefono) ? { telephone: site.contacto.telefono } : {}),
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Valencia',
+    addressRegion: 'Valencia',
+    addressCountry: 'ES',
+  },
+  areaServed: provincia,
+  knowsLanguage: ['es', 'ca'],
+};
+
+/* En la portada se añade el catálogo de servicios del menú. */
+if (pagina.url === '/') {
+  organizacion.hasOfferCatalog = {
+    '@type': 'OfferCatalog',
+    name: 'Servicios de pintura',
+    itemListElement: SERVICIOS.map((s) => ({
+      '@type': 'Offer',
+      itemOffered: { '@type': 'Service', name: s.texto, url: site.dominio + s.url },
+    })),
+  };
+}
+
+/* Servicio concreto de la página: en las de municipio, con su zona;
+   en las de servicio del menú, para toda la provincia. */
+const local = paginaLocal(pagina.url);
+const esServicio = SERVICIOS.some((s) => s.url === pagina.url);
+const servicio = (local || esServicio) && {
+  '@type': 'Service',
+  '@id': canonical + '#servicio',
+  name: pagina.h1 || pagina.titulo,
+  serviceType: local ? local.servicio : pagina.titulo,
+  url: canonical,
+  provider: { '@id': site.dominio + '/#organizacion' },
+  areaServed: local
+    ? { '@type': 'Place', name: local.municipio, containedInPlace: provincia }
+    : provincia,
 };
 
 /* Todas las URLs de esta web cuelgan de la raíz. El padre de una página
@@ -91,6 +131,10 @@ const paginaWeb = {
 };
 
 const bloques = [organizacion, migas, paginaWeb];
+if (servicio) {
+  paginaWeb.mainEntity = { '@id': servicio['@id'] };
+  bloques.push(servicio);
+}
 
 if (pagina.faq && pagina.faq.length > 0) {
   bloques.push({
@@ -111,7 +155,6 @@ const jsonLd = { '@context': 'https://schema.org', '@graph': bloques };
    gtag deja de existir en el ámbito global. */
 const ga = site.analytics?.google || '';
 const verif = site.verificaciones ?? {};
-const puesta = (v) => v && !v.startsWith('PENDIENTE');
 ---
 <!doctype html>
 <html lang={site.idioma}>

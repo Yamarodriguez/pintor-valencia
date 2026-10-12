@@ -1,20 +1,27 @@
 import site from '../data/site.json';
+import { fechaModificacion } from '../utils/negocio.js';
 
 const modulos = import.meta.glob('../content/pages/*.json', { eager: true });
 
-const urls = [...new Set(
-  Object.values(modulos)
-    .map((m) => m.default ?? m)
-    .filter((p) => p.url && !p.noindex)
-    .map((p) => p.url)
-)].sort();
+/* <lastmod> es la fecha del último commit que cambió el JSON de la
+   página, no la de la build: si cambiara en cada despliegue, Google y
+   los rastreadores de IA dejarían de fiarse de ella. */
+const paginas = new Map();
+for (const [ruta, m] of Object.entries(modulos)) {
+  const p = m.default ?? m;
+  if (!p.url || p.noindex || paginas.has(p.url)) continue;
+  paginas.set(p.url, fechaModificacion(ruta.split('/').pop()));
+}
+const urls = [...paginas.keys()].sort();
 
 export function GET() {
-  const hoy = new Date().toISOString().split('T')[0];
-  const cuerpo = urls.map((u) => `  <url>
-    <loc>${site.dominio}${u}</loc>
-    <lastmod>${hoy}</lastmod>
-  </url>`).join('\n');
+  const cuerpo = urls.map((u) => {
+    const fecha = paginas.get(u);
+    return `  <url>
+    <loc>${site.dominio}${u}</loc>${fecha ? `
+    <lastmod>${fecha}</lastmod>` : ''}
+  </url>`;
+  }).join('\n');
 
   return new Response(
     `<?xml version="1.0" encoding="UTF-8"?>
