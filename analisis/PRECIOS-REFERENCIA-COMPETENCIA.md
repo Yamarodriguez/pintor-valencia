@@ -29,3 +29,25 @@ Solo cifras vistas en la web de cada fuente. Casi ninguna dice si lleva IVA. Sir
 - La web dice 600 € por 60 m², 900 € por 90 m², 1.200 € por 100 m² y 1.500 € por 120 m² (unos 10-12,5 €/m²). Está **dentro de la franja de empresas**, pero en las mismas páginas dice también «entre 300 y 900 €» para el mismo caso: hay que dejar una sola cifra.
 - 9 páginas dicen «20 €/hora (15-40 €)», en línea con el mercado.
 - El bloque de escayola, pladur y fachadas («Precios orientativos 2026, IVA no incluido», en 116 páginas) ya lleva fecha e IVA; está bien como modelo.
+
+## Referencia elegida (aplicada el 27-10-2026 con `scripts/precios-mercado.mjs`)
+
+Decisión del propietario: **precios medios del mercado, sin fecha**. Nota en la web: «Precios medios orientativos del mercado, IVA no incluido».
+
+| Concepto | Precio medio | Rango |
+|---|---|---|
+| Pintar por m² de vivienda | 10 €/m² | 8-12 €/m² |
+| Piso de 60 m² | 600 € | 500-700 € |
+| Piso de 60-70 m² | — | 500-850 € |
+| Piso de 90 m² | 900 € | 700-1.100 € |
+| Piso de 100 m² | 1.000 € | 800-1.200 € |
+| Piso de 120 m² | 1.200 € | 950-1.450 € |
+| Pintor por hora | 25 €/h | 20-30 €/h |
+| Pintor por día | — | 100-200 € |
+| Pintar una habitación | — | 120-250 € |
+| Quitar gotelé y alisar / alisar | — | 12-20 €/m² |
+| Alisar y pintar | — | 20-30 €/m² |
+| Puerta lacada | — | 80-200 € por hoja |
+| Estuco veneciano | — | 30-70 €/m² |
+
+Sin cambios, por no haber una media de mercado clara o por coherencia con su familia de páginas: fachadas (10-20 €/m²), escayola (18-35 €/m²), pladur (25-45 €/m²), techos, microcemento, piscinas, impermeabilización, papel pintado, murales, industriales y reformas.
