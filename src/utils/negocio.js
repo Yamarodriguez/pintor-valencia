@@ -52,6 +52,35 @@ export function paginaLocal(url) {
   return null;
 }
 
+/* Referencia única de precios (analisis/PRECIOS-REFERENCIA-COMPETENCIA.md):
+   medias del mercado en Valencia, sin fecha por decisión del propietario.
+   La usa llms.txt. Si cambia, cambiar también scripts/precios-mercado.mjs
+   (texto de las páginas) y las tablas de cuanto-cobra-un-pintor.json. */
+export const PRECIOS = {
+  nota: 'Precios medios orientativos del mercado en Valencia, IVA no incluido.',
+  vivienda: [
+    { concepto: 'Por m² de vivienda (suelo)', medio: '10 €/m²', rango: '8-12 €/m²' },
+    { concepto: 'Piso de 60 m²', medio: '600 €', rango: '500-700 €' },
+    { concepto: 'Piso de 90 m²', medio: '900 €', rango: '700-1.100 €' },
+    { concepto: 'Piso de 100 m²', medio: '1.000 €', rango: '800-1.200 €' },
+    { concepto: 'Piso de 120 m²', medio: '1.200 €', rango: '950-1.450 €' },
+  ],
+  pintor: [
+    { concepto: 'Pintor por hora', medio: '25 €/h', rango: '20-30 €/h' },
+    { concepto: 'Pintor por día', medio: '—', rango: '100-200 €' },
+    { concepto: 'Pintar una habitación', medio: '—', rango: '120-250 €' },
+  ],
+  trabajos: [
+    { concepto: 'Quitar gotelé y alisar', medio: '—', rango: '12-20 €/m²' },
+    { concepto: 'Alisar y pintar', medio: '—', rango: '20-30 €/m²' },
+    { concepto: 'Lacar una puerta', medio: '—', rango: '80-200 € por hoja' },
+    { concepto: 'Estuco veneciano', medio: '—', rango: '30-70 €/m²' },
+    { concepto: 'Fachadas', medio: '—', rango: '10-20 €/m²' },
+    { concepto: 'Techos de escayola', medio: '—', rango: '18-35 €/m²' },
+    { concepto: 'Pladur', medio: '—', rango: '25-45 €/m²' },
+  ],
+};
+
 /* Servicios del menú principal (/casa/, /gotele/...). */
 export const SERVICIOS = site.navegacion.find((e) => e.url === '/servicios-pintura/')?.hijos ?? [];
 

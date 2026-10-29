@@ -4,7 +4,7 @@
   "description": "pintor-valencia.com — migración de WordPress + Elementor a Astro estático",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && node scripts/indexnow.mjs",
     "preview": "astro preview"
   },
   "license": "ISC",

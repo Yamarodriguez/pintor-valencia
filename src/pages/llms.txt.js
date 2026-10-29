@@ -2,7 +2,7 @@
    llmstxt.org). Se genera en cada build desde site.json y los JSON de
    páginas, así que un servicio o municipio nuevo aparece solo. */
 import site from '../data/site.json';
-import { puesta, MUNICIPIOS, PAGINA_PINTORES, SERVICIOS } from '../utils/negocio.js';
+import { puesta, MUNICIPIOS, PAGINA_PINTORES, SERVICIOS, PRECIOS } from '../utils/negocio.js';
 
 const modulos = import.meta.glob('../content/pages/*.json', { eager: true });
 const PAGINAS = Object.fromEntries(
@@ -38,11 +38,24 @@ export function GET() {
 
 Trabajamos en Valencia capital (por barrios) y en ${Object.keys(MUNICIPIOS).length} municipios y barrios de la provincia. Cada servicio tiene una página general y una página por municipio.
 
+## Datos clave
+
+- Zona: Valencia capital y provincia de Valencia
+- Idiomas: español y valenciano
+- Presupuesto: gratis y sin compromiso, por formulario web
+${[...PRECIOS.vivienda, ...PRECIOS.pintor, ...PRECIOS.trabajos]
+  .map((p) => `- ${p.concepto}: ${p.medio !== '—' ? `${p.medio} de media (${p.rango})` : p.rango}`)
+  .join('\n')}
+- ${PRECIOS.nota}
+
+Texto completo de las páginas principales: ${d}/llms-full.txt
+
 ## Empresa y contacto
 
 ${enlace('/', 'Inicio')}
 ${enlace('/empresa/', 'Empresa')}
 ${enlace('/precio/', 'Precios', 'precios orientativos de pintura por metro cuadrado y por tamaño de vivienda')}
+${enlace('/cuanto-cobra-un-pintor/', '¿Cuánto cobra un pintor?', 'por hora, por día y por m², y por qué no es lo mismo el m² de suelo que el de pared')}
 ${contacto.join('\n')}
 
 ## Servicios de pintura

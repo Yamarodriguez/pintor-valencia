@@ -16,7 +16,7 @@ const { pagina, baseImagenes = '' } = Astro.props;
    todavía, se sirve el marcador .svg del mismo nombre. */
 const declarado = heroes[pagina.url];
 import { resolverImagen, existe } from '../utils/imagenes.js';
-import { puesta, paginaLocal, SERVICIOS } from '../utils/negocio.js';
+import { puesta, paginaLocal, SERVICIOS, fechaModificacion } from '../utils/negocio.js';
 const rutaHero = resolverImagen(pagina.hero ?? declarado?.imagen ?? null);
 
 /* Variante estrecha para móviles: se sirve si existe un archivo
@@ -120,6 +120,9 @@ const migas = {
   })),
 };
 
+/* dateModified es la misma fecha que el <lastmod> del sitemap (último
+   commit del JSON). La portada vive en home.json, no en su slug. */
+const modificada = fechaModificacion(pagina.url === '/' ? 'home.json' : `${pagina.slug}.json`);
 const paginaWeb = {
   '@type': 'WebPage',
   '@id': canonical + '#pagina',
@@ -127,6 +130,7 @@ const paginaWeb = {
   name: titulo,
   description: pagina.metaDescripcion,
   inLanguage: 'es',
+  ...(modificada ? { dateModified: modificada } : {}),
   isPartOf: { '@id': site.dominio + '/#organizacion' },
 };
 
