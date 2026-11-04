@@ -1866,3 +1866,53 @@ body{ background:var(--fondo); color:#4c5375; }
 
 /* — Enlaces de cuerpo con subrayado elegante — */
 .prosa a:not(.pildora){ text-decoration-thickness:1px; text-underline-offset:3px; }
+
+/* ── Menú con columnas, CTA y pie ampliado ─────────────────── */
+.nav__cta .pildora { margin: 0; color: #fff; white-space: nowrap; padding-block: .55rem; border-bottom: 0; }
+.nav > li.nav__cta > a.pildora:hover { color: #fff; }
+
+.submenu__columna ul { list-style: none; margin: 0; padding: 0; }
+.submenu__titulo {
+  margin: 0;
+  padding: .45rem var(--e-2);
+  font-family: var(--display);
+  font-size: var(--t-sm);
+  font-weight: 700;
+  color: var(--azul);
+}
+.submenu__pie,
+.submenu__cierre { margin: 0; border-top: 1px solid var(--borde); }
+.submenu__pie a,
+.submenu__cierre a { font-weight: 700; }
+
+@media (min-width: 1024px) {
+  .cabecera__barra { position: relative; }
+  .nav__grupo--mega { position: static; }
+  .submenu--mega {
+    left: var(--e-2);
+    right: var(--e-2);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    padding: var(--e-2);
+  }
+  .nav__grupo--mega:hover > .submenu--mega,
+  .nav__grupo--mega:focus-within > .submenu--mega,
+  .nav__grupo--mega > .conmutador:checked ~ .submenu--mega { display: grid; }
+  .submenu__pie { grid-column: 1 / -1; margin-top: var(--e-1); }
+}
+
+@media (max-width: 1023px) {
+  .nav__cta { padding-block: var(--e-2); border-bottom: 0 !important; }
+  .nav__cta .pildora { display: flex; justify-content: center; min-height: 44px; }
+}
+
+.enlaces__todo { margin: 0; font-weight: 700; }
+
+.pie__columnas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: var(--e-3);
+  margin-bottom: var(--e-3);
+}
+.pie__lista { list-style: none; margin: 0; padding: 0; }
+.pie__lista li { margin: 0; }
+.pie__lista a { display: inline-block; padding-block: .3rem; }

@@ -1,11 +1,22 @@
 ---
 import site from '../data/site.json';
+import menu from '../data/menu.json';
 import { puesta } from '../utils/negocio.js';
 const anio = new Date().getFullYear();
 ---
 <footer class="pie">
   <div class="contenedor">
-    <p class="pie__marca">{site.nombre}</p>
+    <div class="pie__columnas">
+      {menu.pie.map((c) => (
+        <div>
+          <p class="pie__marca">{c.titulo}</p>
+          <ul class="pie__lista">
+            {c.enlaces.map((e) => <li><a href={e.url}>{e.texto}</a></li>)}
+          </ul>
+        </div>
+      ))}
+    </div>
+
     {puesta(site.email) && <p><a href={`mailto:${site.email}`}>{site.email}</a></p>}
 
     {site.pie.enlaces.length > 0 && (

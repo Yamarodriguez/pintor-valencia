@@ -1,0 +1,37 @@
+{
+  "_comentario": "Agrupa las 115 zonas por comarca. Lo usan el hub /zonas/, las páginas índice de fachadas, escayola y pladur, y el bloque 'cerca de' de cada zona. Las claves son las de MUNICIPIOS en utils/negocio.js. El orden importa: cada zona enlaza a las 6 siguientes de su grupo, de forma circular, para repartir los enlaces por igual.",
+  "grupos": [
+    {
+      "nombre": "Valencia capital",
+      "zonas": ["ruzafa", "el-carmen", "benimaclet", "campanar", "patraix", "cabanal", "malvarrosa", "blasco-ibanez", "mestalla", "la-creu-del-grau", "monteolivete", "arrancapins", "nou-moles", "sant-pau", "benicalap", "torrefiel", "orriols", "benimamet", "malilla", "la-raiosa"]
+    },
+    {
+      "nombre": "L'Horta Sud y Oest",
+      "zonas": ["torrent", "paterna", "mislata", "aldaia", "manises", "xirivella", "alaquas", "quart-de-poblet", "catarroja", "paiporta", "picassent", "silla", "alfafar", "albal", "benetusser", "picanya", "alcasser", "sedavi", "massanassa", "beniparrell"]
+    },
+    {
+      "nombre": "L'Horta Nord y Morvedre",
+      "zonas": ["sagunto", "alboraya", "burjassot", "moncada", "puzol", "massamagrell", "godella", "meliana", "rafelbunol-rafelbunyol", "tavernes-blanques", "puig", "pobla-de-farnals", "rocafort", "foios", "almassera", "museros", "canet-de-berenguer", "albalat-dels-sorells", "bonrepos-i-mirambell", "vinalesa", "alfara-del-patriarca"]
+    },
+    {
+      "nombre": "Camp de Túria",
+      "zonas": ["betera", "pobla-de-vallbona", "lliria", "ribarroja-del-turia", "eliana", "benaguasil", "vilamarxant", "san-antonio-benageber", "naquera", "marines", "casinos"]
+    },
+    {
+      "nombre": "La Ribera",
+      "zonas": ["alzira", "sueca", "algemesi", "cullera", "carcaixent", "carlet", "alginet", "alcudia", "benifaio", "alberic", "almussafes", "montserrat", "turis", "villanueva-de-castellon", "guadassuar", "lhort-de-senabre", "corbera", "sollana", "llombai", "catadau"]
+    },
+    {
+      "nombre": "La Safor",
+      "zonas": ["gandia", "oliva", "tavernes-de-valldigna", "bellreguard", "piles", "daimus", "miramar", "villalonga"]
+    },
+    {
+      "nombre": "La Costera y La Vall d'Albaida",
+      "zonas": ["ontinyent", "xativa", "canals", "olleria", "albaida", "moixent", "bocairent", "aielo-de-malferit"]
+    },
+    {
+      "nombre": "Hoya de Buñol, Requena-Utiel y Ayora",
+      "zonas": ["chiva", "requena", "utiel", "bunol", "cheste", "godelleta", "ayora"]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+---
+/* Bloque final de cada página. Sustituye a la lista fija de "otros
+   servicios" allí donde hay algo más útil que enlazar:
+   - zona: sus otros servicios en el municipio y las zonas cercanas;
+   - servicio: los servicios de su misma columna del menú, y los precios.
+   El resto de páginas conservan OtrosServicios. */
+import OtrosServicios from './OtrosServicios.astro';
+import { enlacesDeZona, enlacesDeServicio, GRUPOS_SERVICIO } from '../utils/enlaces.js';
+
+const { url } = Astro.props;
+const zona = enlacesDeZona(url);
+const servicio = zona ? null : enlacesDeServicio(url);
+---
+{url === '/servicios-pintura/' ? (
+  <section class="seccion seccion--alt">
+    <div class="contenedor">
+      {GRUPOS_SERVICIO.map((g) => (
+        <div class="prosa"><h2 class="zonas-titulo">{g.titulo}</h2></div>
+        <ul class="zonas">
+          {g.enlaces.map((e) => <li><a href={e.url}>{e.texto}</a></li>)}
+        </ul>
+      ))}
+    </div>
+  </section>
+) : zona ? (
+  <section class="seccion seccion--alt">
+    <div class="contenedor">
+      <div class="prosa"><h2>Más servicios en {zona.nombre}</h2></div>
+      <ul class="zonas">
+        {zona.servicios.map((e) => <li><a href={e.url}>{e.texto}</a></li>)}
+        <li><a href="/precio/">Precios de pintura</a></li>
+      </ul>
+      <div class="prosa"><h2 class="zonas-titulo">{zona.plural} cerca de {zona.nombre}</h2></div>
+      <ul class="zonas">
+        {zona.cercanas.map((e) => <li><a href={e.url}>{e.texto}</a></li>)}
+      </ul>
+      <p class="enlaces__todo"><a href={zona.indice.url}>{zona.indice.todas}</a></p>
+    </div>
+  </section>
+) : servicio ? (
+  <section class="seccion seccion--alt">
+    <div class="contenedor">
+      <div class="prosa"><h2>Servicios relacionados</h2></div>
+      <ul class="zonas">
+        {servicio.relacionados.map((e) => <li><a href={e.url}>{e.texto}</a></li>)}
+        <li><a href="/precio/">Precios de pintura</a></li>
+      </ul>
+      <p class="enlaces__todo"><a href="/servicios-pintura/">Ver todos los servicios</a></p>
+    </div>
+  </section>
+) : (
+  <OtrosServicios />
+)}

@@ -3,7 +3,7 @@ import site from '../data/site.json';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Migas from '../components/Migas.astro';
-import OtrosServicios from '../components/OtrosServicios.astro';
+import EnlacesRelacionados from '../components/EnlacesRelacionados.astro';
 import heroes from '../data/heroes.json';
 import '@fontsource-variable/space-grotesk';
 import '@fontsource-variable/manrope';
@@ -246,7 +246,7 @@ const verif = site.verificaciones ?? {};
 
       <slot />
 
-      <OtrosServicios />
+      <EnlacesRelacionados url={pagina.url} />
     </main>
 
     <Footer />

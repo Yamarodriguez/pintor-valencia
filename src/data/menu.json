@@ -1,0 +1,153 @@
+{
+  "_comentario": "Menú y pie de TODA la web. Va aparte de site.json a propósito: site.navegacion sigue siendo la fuente de SERVICIOS, MUNICIPIOS, schema, migas y llms.txt, y no debe recortarse.",
+  "principal": [
+    {
+      "texto": "Servicios",
+      "url": "/servicios-pintura/",
+      "columnas": [
+        {
+          "titulo": "Viviendas",
+          "enlaces": [
+            { "texto": "Pintar pisos", "url": "/pintor-piso/" },
+            { "texto": "Pintar casas y chalets", "url": "/casa/" },
+            { "texto": "Pintura de interiores", "url": "/pintores-de-interiores/" },
+            { "texto": "Paredes y techos", "url": "/pintor-de-paredes-y-techos/" },
+            { "texto": "Pintores para particulares", "url": "/pintores-particulares/" },
+            { "texto": "Pintar baños", "url": "/pintar-bano/" }
+          ]
+        },
+        {
+          "titulo": "Edificios y empresas",
+          "enlaces": [
+            { "texto": "Comunidades de vecinos", "url": "/pintores-para-comunidades/" },
+            { "texto": "Fachadas", "url": "/pintores-de-fachadas/" },
+            { "texto": "Pintura de exteriores", "url": "/pintura-de-exteriores/" },
+            { "texto": "Empresas, locales y oficinas", "url": "/pintores-para-empresas/" },
+            { "texto": "Pintura industrial", "url": "/pintores-industriales/" },
+            { "texto": "Suelos epoxi para garajes", "url": "/suelos-epoxi-garajes/" }
+          ]
+        },
+        {
+          "titulo": "Acabados",
+          "enlaces": [
+            { "texto": "Quitar gotelé y alisar", "url": "/quitar-gotele-alisar-paredes/" },
+            { "texto": "Alisado de paredes", "url": "/alisado-de-paredes/" },
+            { "texto": "Lacados", "url": "/lacados/" },
+            { "texto": "Microcemento", "url": "/microcemento/" },
+            { "texto": "Pintura decorativa y estucos", "url": "/pintura-decorativa-estucos/" },
+            { "texto": "Papel pintado", "url": "/empapelado-papel-pintado/" },
+            { "texto": "Barnizado de madera", "url": "/barnizado-de-madera/" }
+          ]
+        },
+        {
+          "titulo": "Reparación y especialidades",
+          "enlaces": [
+            { "texto": "Humedades y moho", "url": "/tratamiento-humedades-moho/" },
+            { "texto": "Impermeabilizaciones", "url": "/impermeabilizaciones/" },
+            { "texto": "Reparar grietas", "url": "/pintar-reparar-grietas/" },
+            { "texto": "Pladur", "url": "/pladur/" },
+            { "texto": "Escayola", "url": "/escayolista/" },
+            { "texto": "Piscinas", "url": "/pintor-piscinas/" },
+            { "texto": "Muebles", "url": "/pintor-muebles/" }
+          ]
+        }
+      ],
+      "todo": { "texto": "Ver todos los servicios", "url": "/servicios-pintura/" }
+    },
+    {
+      "texto": "Precios",
+      "url": "/precio/",
+      "hijos": [
+        { "texto": "Precios de pintura", "url": "/precio/" },
+        { "texto": "Cuánto cobra un pintor", "url": "/cuanto-cobra-un-pintor/" },
+        { "texto": "Pintores baratos", "url": "/baratos/" }
+      ]
+    },
+    {
+      "texto": "Zonas",
+      "url": "/zonas/",
+      "hijos": [
+        { "texto": "Torrent", "url": "/torrent/" },
+        { "texto": "Gandía", "url": "/gandia/" },
+        { "texto": "Sagunto", "url": "/sagunto/" },
+        { "texto": "Paterna", "url": "/paterna/" },
+        { "texto": "Alzira", "url": "/alzira/" },
+        { "texto": "Xàtiva", "url": "/pintores-xativa/" },
+        { "texto": "Llíria", "url": "/pintores-en-lliria/" },
+        { "texto": "Ontinyent", "url": "/ontinyent/" }
+      ],
+      "todo": { "texto": "Ver todas las zonas", "url": "/zonas/" }
+    },
+    { "texto": "Empresa", "url": "/empresa/" },
+    { "texto": "Contacto", "url": "/contacto/" }
+  ],
+  "serviciosFueraDelMenu": [
+    {
+      "titulo": "Pequeños trabajos",
+      "enlaces": [
+        { "texto": "Pintar paredes", "url": "/pintar-paredes/" },
+        { "texto": "Pintar techos", "url": "/pintar-techo/" },
+        { "texto": "Pintar puertas", "url": "/pintar-puerta/" },
+        { "texto": "Pintar rejas", "url": "/pintar-rejas/" },
+        { "texto": "Pintar portones", "url": "/pintar-porton/" },
+        { "texto": "Pintar barandillas", "url": "/pintar-barandilla/" },
+        { "texto": "Pintar suelos", "url": "/pintar-suelo/" },
+        { "texto": "Molduras y zócalos", "url": "/pintar-molduras-zocalos/" },
+        { "texto": "Preparar superficies", "url": "/preparar-superficies-pintar/" }
+      ]
+    },
+    {
+      "titulo": "Otros trabajos",
+      "enlaces": [
+        { "texto": "Gotelé", "url": "/gotele/" },
+        { "texto": "Pintura ecológica y antibacteriana", "url": "/pintura-ecologica-antibacteriana/" },
+        { "texto": "Pintor mural", "url": "/pintor-mural/" },
+        { "texto": "Pintor de brocha gorda", "url": "/pintor-de-brocha-gorda/" },
+        { "texto": "Remodelaciones y reformas", "url": "/remodelaciones-reformas-proyectos/" },
+        { "texto": "Reformas con pladur", "url": "/reformas-pladur/" },
+        { "texto": "Diseño 3D", "url": "/diseno-3d/" }
+      ]
+    }
+  ],
+  "cta": { "texto": "Presupuesto gratis", "url": "/presupuesto/" },
+  "pie": [
+    {
+      "titulo": "Pintor Valencia",
+      "enlaces": [
+        { "texto": "Pintor en Valencia", "url": "/" },
+        { "texto": "Empresa", "url": "/empresa/" },
+        { "texto": "Presupuesto", "url": "/presupuesto/" },
+        { "texto": "Contacto", "url": "/contacto/" },
+        { "texto": "Tienda de pinturas", "url": "/tienda-pinturas/" }
+      ]
+    },
+    {
+      "titulo": "Servicios",
+      "enlaces": [
+        { "texto": "Pintar pisos", "url": "/pintor-piso/" },
+        { "texto": "Fachadas", "url": "/pintores-de-fachadas/" },
+        { "texto": "Comunidades de vecinos", "url": "/pintores-para-comunidades/" },
+        { "texto": "Quitar gotelé y alisar", "url": "/quitar-gotele-alisar-paredes/" },
+        { "texto": "Todos los servicios", "url": "/servicios-pintura/" }
+      ]
+    },
+    {
+      "titulo": "Precios",
+      "enlaces": [
+        { "texto": "Precios de pintura", "url": "/precio/" },
+        { "texto": "Cuánto cobra un pintor", "url": "/cuanto-cobra-un-pintor/" },
+        { "texto": "Pintores baratos", "url": "/baratos/" }
+      ]
+    },
+    {
+      "titulo": "Zonas",
+      "enlaces": [
+        { "texto": "Valencia capital", "url": "/zonas/#valencia-capital" },
+        { "texto": "L'Horta", "url": "/zonas/#lhorta-sud-y-oest" },
+        { "texto": "La Ribera", "url": "/zonas/#la-ribera" },
+        { "texto": "La Safor", "url": "/zonas/#la-safor" },
+        { "texto": "Todas las zonas", "url": "/zonas/" }
+      ]
+    }
+  ]
+}

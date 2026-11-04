@@ -1,23 +1,18 @@
 ---
 import site from '../data/site.json';
+import menu from '../data/menu.json';
 const { rutaActual } = Astro.props;
 const img = (ruta) => site.baseImagenes + ruta;
 
-const activo = (i) =>
-  i.url === rutaActual ||
-  (i.hijos || []).some((h) => h.url.split('#')[0] === rutaActual);
+/* Todos los enlaces de un elemento del menú, sea cual sea su forma. */
+const enlaces = (i) => [
+  ...(i.hijos ?? []),
+  ...(i.columnas ?? []).flatMap((c) => c.enlaces),
+];
+const activo = (i) => i.url === rutaActual || enlaces(i).some((h) => h.url === rutaActual);
 
 // No mostrar el aviso del email mientras siga con el marcador PENDIENTE.
 const emailPuesto = site.email && !site.email.startsWith('PENDIENTE');
-
-// Menú propio en la sección de escayola (/escayolista/ y /escayolista-*).
-const enEscayola = !!rutaActual && rutaActual.startsWith('/escayolista');
-const enPladur = !!rutaActual && rutaActual.startsWith('/pladur');
-const enFachada = !!rutaActual && (rutaActual.startsWith('/fachadas-') || rutaActual === '/pintores-de-fachadas/');
-const nav = (enEscayola && site.navegacionEscayola) ? site.navegacionEscayola
-          : (enPladur && site.navegacionPladur) ? site.navegacionPladur
-          : (enFachada && site.navegacionFachada) ? site.navegacionFachada
-          : site.navegacion;
 ---
 <header class="cabecera">
   {emailPuesto && (
@@ -45,27 +40,48 @@ const nav = (enEscayola && site.navegacionEscayola) ? site.navegacionEscayola
 
     <nav class="menu__nav" aria-label="Principal">
       <ul class="nav">
-        {nav.map((item, n) => item.hijos ? (
-          <li class:list={['nav__grupo', { 'es-activo': activo(item) }]}>
+        {menu.principal.map((item, n) => (item.hijos || item.columnas) ? (
+          <li class:list={['nav__grupo', { 'nav__grupo--mega': item.columnas, 'es-activo': activo(item) }]}>
             <input type="checkbox" id={`grupo-${n}`} class="conmutador" />
             <div class="nav__fila">
-              {item.url
-                ? <a class="nav__cabeza" href={item.url}
-                     aria-current={rutaActual === item.url ? 'page' : undefined}
-                  >{item.texto}</a>
-                : <label for={`grupo-${n}`} class="nav__cabeza">{item.texto}</label>}
+              <a class="nav__cabeza" href={item.url}
+                 aria-current={rutaActual === item.url ? 'page' : undefined}
+              >{item.texto}</a>
               <label for={`grupo-${n}`} class="nav__toggle"
                      aria-label={`Desplegar ${item.texto}`}></label>
             </div>
-            <ul class:list={['submenu', { 'submenu--ancho': item.hijos.length > 8 }]}>
-              {item.hijos.map((h) => (
-                <li>
-                  <a href={h.url}
-                     aria-current={rutaActual === h.url ? 'page' : undefined}
-                  >{h.texto}</a>
-                </li>
-              ))}
-            </ul>
+            {item.columnas ? (
+              <div class="submenu submenu--mega">
+                {item.columnas.map((c) => (
+                  <div class="submenu__columna">
+                    <p class="submenu__titulo">{c.titulo}</p>
+                    <ul>
+                      {c.enlaces.map((h) => (
+                        <li>
+                          <a href={h.url}
+                             aria-current={rutaActual === h.url ? 'page' : undefined}
+                          >{h.texto}</a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+                <p class="submenu__pie"><a href={item.todo.url}>{item.todo.texto}</a></p>
+              </div>
+            ) : (
+              <ul class="submenu">
+                {item.hijos.map((h) => (
+                  <li>
+                    <a href={h.url}
+                       aria-current={rutaActual === h.url ? 'page' : undefined}
+                    >{h.texto}</a>
+                  </li>
+                ))}
+                {item.todo && (
+                  <li class="submenu__cierre"><a href={item.todo.url}>{item.todo.texto}</a></li>
+                )}
+              </ul>
+            )}
           </li>
         ) : (
           <li>
@@ -74,6 +90,7 @@ const nav = (enEscayola && site.navegacionEscayola) ? site.navegacionEscayola
             >{item.texto}</a>
           </li>
         ))}
+        <li class="nav__cta"><a class="pildora" href={menu.cta.url}>{menu.cta.texto}</a></li>
       </ul>
     </nav>
   </div>

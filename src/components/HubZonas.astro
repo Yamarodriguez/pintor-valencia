@@ -1,0 +1,22 @@
+---
+/* Índice de zonas por comarca. Es la única vía de rastreo hacia todas las
+   páginas locales, ahora que el menú solo enlaza las principales: lo
+   muestran /zonas/ y los índices de fachadas, escayola y pladur. */
+import { FAMILIAS, gruposDeFamilia } from '../utils/enlaces.js';
+
+const { familia = 'pintores' } = Astro.props;
+const grupos = gruposDeFamilia(familia);
+const plural = FAMILIAS[familia].plural;
+---
+<section class="seccion">
+  <div class="contenedor">
+    {grupos.map((g) => (
+      <div class="prosa" id={g.ancla}>
+        <h2 class="zonas-titulo">{plural} en {g.nombre}</h2>
+      </div>
+      <ul class="zonas">
+        {g.enlaces.map((e) => <li><a href={e.url}>{e.texto}</a></li>)}
+      </ul>
+    ))}
+  </div>
+</section>
